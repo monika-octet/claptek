@@ -1,0 +1,1191 @@
+/* Blue color CSS Document */
+
+body {
+    font-family: verdana;
+    font-size: 09px;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 20px;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+form {
+    font-family: verdana;
+    margin: 0px;
+    padding: 0px;
+    font-size: 09px;
+}
+
+input {
+    font-family: verdana;
+    border: #CCCCCC solid 1px;
+    font-size: 09px;
+}
+
+select {
+    font-family: verdana;
+    border: #CCCCCC solid 1px;
+    font-size: 09px;
+}
+
+a {
+    font-family: verdana;
+    text-decoration: none;
+}
+
+    a:hover {
+        font-family: verdana;
+        text-decoration: underline;
+    }
+
+.back-image {
+    font-family: verdana;
+    background: url(../images/bluebackground.jpg) right bottom no-repeat;
+}
+
+.login-button {
+    font-family: Verdana;
+    border: #000000 solid 1px;
+    background: #134B86;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    height: 22px;
+}
+
+.form-button {
+    font-family: Verdana;
+    border: #000000 solid 1px;
+    background: #134B86;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    height: 22px;
+    width: 100px
+}
+
+.form-arrow-button {
+    font-family: verdana;
+    border: #000000 solid 1px;
+    background: #7681fd;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    height: 22px;
+    width: 25px
+}
+
+.header {
+    font-family: Verdana;
+    background: url(../images/blueheader_bg.jpg) repeat-x;
+    height: 52px;
+    padding: 0 10px 0 25px;
+}
+
+    .header div.logo {
+        font-family: Verdana;
+        width: 275px;
+        float: left;
+    }
+
+    .header div.title {
+        font-family: Verdana;
+        width: 500px;
+        font-family: "verdana";
+        font-size: 24px;
+        color: #FFFFFF;
+        padding-left: 10px;
+        padding-top: 22px;
+        padding-bottom: 10px;
+        float: left;
+    }
+
+    .header div.cleint-logo {
+        font-family: verdana;
+        padding: 3px;
+        float: right;
+    }
+
+
+.pathway {
+    font-family: Verdana;
+    height: 26px;
+    background: #A5CFE5;
+    color: #003366;
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+    .pathway a {
+        font-family: Verdana;
+        color: #003366;
+        text-decoration: none;
+    }
+
+        .pathway a:hover {
+            font-family: Verdana;
+            text-decoration: underline;
+        }
+
+.Wpathway {
+    font-family: Verdana;
+    height: 20px;
+    background: #7681fd;
+    color: #003366;
+    font-size: 10px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.mainContent {
+    font-family: verdana;
+    padding: 10px 20px;
+}
+
+.errorContent {
+    font-family: verdana;
+    font-size: 09px;
+    color: Red;
+}
+
+
+.login-screen {
+    font-family: verdana;
+    padding: 10px 40px;
+    
+}
+
+    .login-screen div.banner {
+        font-family: verdana;
+        border: #CCCCCC solid 1px;
+        width: 438px;
+        height: 228px;
+        float: left;
+    }
+
+    .login-screen div.admin-area {
+        font-family: verdana;
+        border: #CCCCCC solid 1px;
+        width: 418px;
+        height: 500px;
+        float: left;
+        background: #f5f1f5;
+        padding: 10px;
+        text-align: left;
+    }
+
+        .login-screen div.admin-area div.mesaage {
+            font-family: verdana;
+            float: left;
+            width: 175px;
+            padding: 5px;
+            color: #7a2856;
+            font-size: 11px;
+        }
+
+        .login-screen div.admin-area div.form {
+            font-family: verdana;
+            float: left;
+            width: 202px;
+            border: #CCCCCC solid 1px;
+            background: #efe9ef;
+            padding: 10px;
+        }
+
+            .login-screen div.admin-area div.form div.label {
+                font-family: verdana;
+                font-weight: bold;
+                padding-bottom: 5px;
+                font-size: 11px;
+            }
+
+            .login-screen div.admin-area div.form div.text {
+                font-family: verdana;
+                padding-bottom: 10px;
+            }
+
+.footer {
+    font-family: Verdana;
+    position: absolute;
+    bottom: 0;
+    height: 68px;
+    width: 100%;
+    color: #7a2856;
+    font-size: 10px;
+    border-bottom: #3c80b2 solid 7px;
+    color: #003366;
+}
+
+    .footer div.copyright {
+        font-family: Verdana;
+        float: left;
+        width: 50%;
+        padding: 25px 0 0 20px;
+    }
+
+    .footer div.powered-logo {
+        font-family: Verdana;
+        text-align: right;
+        padding: 5px 10px 0 0;
+    }
+
+    .footer div.legalmsg {
+        font-family: Verdana;
+        float: left;
+        width: 400px;
+        padding: 25px 0 0 20px;
+    }
+
+.footer1 {
+    font-family: Verdana;
+    height: 68px;
+    width: 100%;
+    color: #7a2856;
+    font-size: 10px;
+    border-bottom: #3c80b2 solid 7px;
+    color: #003366;
+}
+
+    .footer1 div.copyright {
+        font-family: Verdana;
+        float: left;
+        width: 300px;
+        padding: 25px 0 0 20px;
+    }
+
+    .footer1 div.powered-logo {
+        text-align: right;
+        width: 400px;
+        padding: 5px 10px 0 0;
+    }
+
+    .footer1 div.legalmsg {
+        font-family: Verdana;
+        float: left;
+        width: 400px;
+        padding: 25px 0 0 20px;
+    }
+
+
+
+.topgreybar {
+    font-family: verdana;
+    border-bottom: #003366 solid 1px;
+    border-top: #003366 solid 1px;
+    background: #f1f3f5;
+    padding: 20px 40px;
+}
+
+.page-title {
+    font-family: Verdana;
+    background: url(../images/bluepage-title_bg.jpg) left no-repeat;
+    padding: 15px 0 10px 60px;
+    color: #003366;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Info {
+    font-family: Verdana;
+    background: url(../images/Info.jpg) left no-repeat;
+    padding: 15px 0 10px 60px;
+    color: #003366;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.parameter-red {
+    font-family: verdana;
+    color: #003366;
+    font-size: 09px;
+}
+
+.parameter-green {
+    font-family: verdana;
+    color: #003366;
+    font-size: 09px;
+}
+
+.table-header-footer {
+    font-family: Verdana;
+    background: url(../images/bluetable_header.jpg) repeat-x;
+    height: 19px;
+    padding: 5px;
+    color: #003366;
+    overflow: hidden;
+    max-height: 19px;
+    line-height: 19px;
+    font-size: 09px;
+}
+
+    .table-header-footer a {
+        font-family: Verdana;
+        text-decoration: none;
+        color: #003366;
+        font-size: 10px;
+        font-weight: bold;
+        overflow: hidden;
+    }
+
+.table-header-footer1 {
+    font-family: Verdana;
+    text-decoration: none;
+    color: #003366;
+    font-size: 08px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-header-footer a:hover {
+    font-family: Verdana;
+    text-decoration: underline;
+    color: #003366;
+    overflow: hidden;
+}
+
+.table-subtotal {
+    font-size: 9.0pt;
+    font-family: Verdana;
+    color: #453E60;
+    font-weight: bold;
+    font-size: 09px;
+}
+
+.reporttable {
+    font-family: Verdana;
+    color: #003366;
+    border-left: #e5e5e5 solid 1px;
+    border-right: #e5e5e5 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    .reporttable th {
+        font-family: verdana;
+        white-space: nowrap;
+        background: url(../images/bluetable_header.jpg) repeat-x;
+        height: 19px;
+        padding: 5px;
+        color: #003366;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .reporttable td {
+        font-family: verdana;
+        border-bottom: #e5e5e5 solid 1px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 09px;
+    }
+
+
+
+.detailtable {
+    font-family: Verdana;
+    color: #003366;
+    background: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    .detailtable th {
+        font-family: verdana;
+        white-space: nowrap;
+        background: url(../images/bluetable_header.jpg) repeat-x;
+        height: 19px;
+        padding: 5px;
+        color: #003366;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .detailtable td {
+        font-family: verdana;
+        text-align: left;
+        overflow: hidden;
+        font-size: 09px;
+        text-overflow: ellipsis;
+    }
+
+.formtable {
+    font-family: Verdana;
+    color: #003366;
+    border-left: #e5e5e5 solid 1px;
+    border-right: #e5e5e5 solid 1px;
+    background: #FFFFFF;
+    width: 80%;
+    overflow: hidden;
+}
+
+    .formtable th {
+        font-family: Verdana;
+        white-space: nowrap;
+        background: url(../images/bluetable_header.jpg) repeat-x;
+        height: 19px;
+        padding: 5px;
+        color: #003366;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .formtable td {
+        font-family: Verdana;
+        border-bottom: #e5e5e5 solid 1px;
+        text-align: left;
+        overflow: hidden;
+        font-size: 09px;
+    }
+
+        .formtable td.button {
+            font-family: Verdana;
+            text-align: center;
+            border-bottom: #e5e5e5 solid 1px;
+            overflow: hidden;
+            font-size: 09px;
+        }
+
+        .formtable td.first {
+            font-family: Verdana;
+            text-align: left;
+            width: 100%;
+            border-bottom: #e5e5e5 solid 1px;
+            overflow: hidden;
+            font-size: 09px;
+        }
+
+        .formtable td.right {
+            font-family: Verdana;
+            text-align: right;
+            border-bottom: #e5e5e5 solid 1px;
+            overflow: hidden;
+            font-size: 09px;
+        }
+
+/*ACCORDIAN TABLE CSS STARTS FROM HERE*/
+#accordianmenuMain {
+    height: 220px;
+}
+
+.accordianmenu {
+    background: #FFFFFF;
+}
+
+.tableclass {
+    border-bottom: #CCCCCC solid 1px;
+    border-left: #CCCCCC solid 1px;
+    border-right: #CCCCCC solid 1px;
+    height: 180px;
+    background: #FFFFFF;
+}
+
+.accordianmenu th {
+    background: url(../images/tablehederbg.gif) repeat-x;
+    color: #175387;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.accordianmenu td {
+    color: #990000;
+    font-size: 10px;
+}
+
+.tabletitle {
+    border: #CCCCCC solid 1px;
+    background: #1f5e97 url(../images/acordian-table-title-blue.jpg) left no-repeat;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+
+.tabletitle1 {
+    border: #CCCCCC solid 1px;
+    background: #1f5e97 url(../images/acordian-table-title-blue.jpg) left no-repeat;
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+
+.tableheader {
+    cursor: pointer;
+    text-decoration: none;
+}
+/*ACCORDIAN TABLE CSS ENDS FROM HERE*/
+
+.padding10 {
+    font-family: verdana;
+    padding: 10px;
+    width: 70%;
+}
+
+.topbtns {
+    font-family: verdana;
+    border: #cfe7f2 solid 1px;
+    background: #FFFFFF;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    color: #003366;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.Graph1 {
+    font-family: verdana;
+    border: #cfe7f2 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    height: 300px;
+}
+
+.Graph2 {
+    font-family: verdana;
+    border: #cfe7f2 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    height: 200px;
+}
+
+.Graph3 {
+    font-family: verdana;
+    border: #cfe7f2 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    height: 200px;
+}
+
+.Graph4 {
+    font-family: verdana;
+    border: #cfe7f2 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    height: 200px;
+}
+
+/*MENU CSS STARTS FROM HERE*/
+
+.clCMAbs {
+    LEFT: 0px;
+    VISIBILITY: hidden;
+    POSITION: absolute;
+    TOP: 0px;
+    z-index: 1001;
+}
+
+.clBar {
+    VISIBILITY: hidden;
+    WIDTH: 10px;
+    POSITION: absolute;
+    z-index: 1001;
+}
+
+.clLevel0 {
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px;
+    color: #732678;
+    POSITION: absolute;
+    left: 288px;
+    top: 405px;
+    z-index: 1001;
+}
+
+.clLevel0over {
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px;
+    color: #732678;
+    POSITION: absolute;
+    left: 288px;
+    top: 405px;
+    z-index: 1001;
+}
+
+.clLevel01 {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+    left: 288px;
+    top: 405px;
+    z-index: 1001;
+}
+
+.clLevel01over {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+    left: 303px;
+    top: 334px;
+    z-index: 1001;
+}
+
+.clLevel0 {
+    cursor: pointer;
+    color: #003366;
+    text-align: center;
+    background: #a5cfe5;
+    font-size: 11px;
+    font-weight: bold;
+    z-index: 1001;
+}
+
+.clLevel0over {
+    cursor: pointer;
+    color: #003366;
+    text-align: center;
+    background: #cfe7f2;
+    font-size: 11px;
+    font-weight: bold;
+    z-index: 1001;
+}
+
+.clLevel0border {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: 1001;
+}
+
+.clLevel01 {
+    cursor: pointer;
+    color: #003366;
+    text-align: left;
+    background: #a5cfe5;
+    border-bottom: #6e3055 solid 1px;
+    z-index: 1001;
+}
+
+.clLevel01over {
+    cursor: pointer;
+    color: #003366;
+    text-align: center;
+    background: #cfe7f2;
+    text-align: left;
+    border-bottom: #6e3055 solid 1px;
+    z-index: 1001;
+}
+
+.clLevel11 {
+    COLOR: white;
+    BACKGROUND-COLOR: navy;
+    layer-background-color: Navy;
+    z-index: 1001;
+}
+
+.clLevel11over {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+    z-index: 1001;
+}
+
+.clLevel11border {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: 1001;
+}
+
+.clLevel1 {
+    COLOR: white;
+    BACKGROUND-COLOR: navy;
+    layer-background-color: Navy;
+    z-index: 1001;
+}
+
+.clLevel1over {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+    z-index: 1001;
+}
+
+.clLevel1over {
+    CURSOR: hand;
+    COLOR: #18304c;
+    BACKGROUND-COLOR: #336699;
+    layer-background-color: #eae4e8;
+    z-index: 1001;
+}
+
+.clLevel1border {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: 1001;
+}
+
+.clLevel2 {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+    z-index: 1001;
+}
+
+.clLevel2over {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+    z-index: 1001;
+}
+
+.clLevel2 {
+    COLOR: white;
+    BACKGROUND-COLOR: navy;
+    layer-background-color: Navy;
+    z-index: 1001;
+}
+
+.clLevel2over {
+    CURSOR: hand;
+    COLOR: yellow;
+    BACKGROUND-COLOR: #eae4e8;
+    layer-background-color: #0099cc;
+    z-index: 1001;
+}
+
+.clLevel2border {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: 1001;
+}
+/*MENU CSS ENDS FROM HERE*/
+
+.clLevel1 {
+    COLOR: white;
+    BACKGROUND-COLOR: navy;
+    layer-background-color: Navy;
+}
+
+.clLevel1over {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+}
+
+.clLevel1over {
+    CURSOR: hand;
+    COLOR: #003366;
+    BACKGROUND-COLOR: #336699;
+    layer-background-color: #a5cfe5;
+}
+
+.clLevel1border {
+    position: absolute;
+    background: #FFFFFF;
+}
+
+.clLevel2 {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+}
+
+.clLevel2over {
+    padding: 4px;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    POSITION: absolute;
+}
+
+.clLevel2 {
+    COLOR: white;
+    BACKGROUND-COLOR: navy;
+    layer-background-color: Navy;
+}
+
+.clLevel2over {
+    CURSOR: hand;
+    COLOR: yellow;
+    BACKGROUND-COLOR: #a5cfe5;
+    layer-background-color: #0099cc;
+}
+
+.clLevel2border {
+    position: absolute;
+    background: #FFFFFF;
+}
+
+/*******MENU CONTROLS END HERE*********/
+
+#layer1 {
+    position: absolute;
+    visibility: hidden;
+    width: 400px;
+    height: 300px;
+    left: 20px;
+    top: 300px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#close {
+    float: right;
+}
+
+.formtable2 {
+    font-family: Verdana;
+    color: #732678;
+    border-left: #e5e5e5 solid 1px;
+    border-right: #e5e5e5 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    table-layout: auto;
+}
+
+    .formtable2 th {
+        font-family: Verdana;
+        white-space: nowrap;
+        background: url(../images/bluetable_header.jpg) repeat-x;
+        height: 19px;
+        padding: 5px;
+        color: #732678;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        max-width: 150px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+    .formtable2 td {
+        font-family: Verdana;
+        border-bottom: #e5e5e5 solid 1px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        overflow: hidden;
+        font-size: 09px;
+    }
+
+
+        .formtable2 td.button {
+            font-family: Verdana;
+            text-align: left;
+            border-bottom: #e5e5e5 solid 1px;
+            overflow: hidden;
+            font-size: 09px;
+        }
+
+
+.formtable3 {
+    font-family: Verdana;
+    color: #732678;
+    border-left: #e5e5e5 solid 1px;
+    border-right: #e5e5e5 solid 1px;
+    background: #FFFFFF;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    .formtable3 th {
+        font-family: Verdana;
+        white-space: nowrap;
+        background: url(../images/bluetable_header.jpg) repeat-x;
+        height: 19px;
+        padding: 5px;
+        color: #732678;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        max-width: 150px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .formtable3 tr {
+        background: RGB(176,196,222);
+    }
+
+    .formtable3 td {
+        font-family: Verdana;
+        border-bottom: #e5e5e5 solid 1px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        overflow: hidden;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+        .formtable3 td.button {
+            font-family: Verdana;
+            text-align: left;
+            border-bottom: #e5e5e5 solid 1px;
+            overflow: hidden;
+            font-size: 09px;
+        }
+
+
+.formtable4 {
+    font-family: Verdana;
+    color: #732678;
+    border-left: #e5e5e5 solid 1px;
+    border-right: #e5e5e5 solid 1px;
+    background: #FFFFFF;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+    .formtable4 th {
+        font-family: Verdana;
+        white-space: nowrap;
+        background: url(../images/bluetable_header.jpg) repeat-x;
+        height: 19px;
+        padding: 5px;
+        color: #732678;
+        font-size: 10px;
+        text-align: center;
+        font-weight: bold;
+        overflow: hidden;
+        max-width: 150px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .formtable4 td {
+        font-family: Verdana;
+        border-bottom: #e5e5e5 solid 1px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        overflow: hidden;
+        font-size: 09px;
+    }
+
+        .formtable4 td.button {
+            font-family: Verdana;
+            text-align: left;
+            border-bottom: #e5e5e5 solid 1px;
+            overflow: hidden;
+            font-size: 09px;
+        }
+
+.grid_answer td {
+    font-family: Verdana;
+    border-bottom: #e5e5e5 solid 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 09px;
+}
+
+.formtable2 td.first {
+    font-family: Verdana;
+    text-align: left;
+    width: 100%;
+    border-bottom: #e5e5e5 solid 1px;
+    overflow: hidden;
+    font-size: 09px;
+}
+
+.formtable2 td.right {
+    font-family: Verdana;
+    text-align: right;
+    border-bottom: #e5e5e5 solid 1px;
+    overflow: hidden;
+    font-size: 09px;
+}
+
+/* Blue color CSS Document */
+
+
+
+.form-button_Round {
+    background: RGB(176,196,222);
+    color: blue;
+    font-size: 10px;
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+    border: 1px solid maroon;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slide-out-div {
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    background: rgb(244,240,241);
+    border: 1px solid rgb(244,240,241);
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.slide-out-divExceptiondetails {
+    padding: 10px;
+    width: 30%;
+    background: rgb(244,240,241);
+    border: 1px solid rgb(244,240,241);
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+    text-align: left;
+}
+
+#DIV_worklog {
+    border: solid 1px lightgray;
+    height: 380px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+    #DIV_worklog > li > h3 {
+        text-transform: uppercase;
+        text-align: left;
+        float: left;
+    }
+
+.worklogUl {
+    list-style: none !important;
+
+}
+
+    .worklogUl li:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: #f00;
+
+    }
+
+    .worklogUl li {
+        font-size: 12px;
+    }
+
+    .worklogUl > li > h4 {
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.Hidden {
+    display: none !important;
+}
+
+.Shown {
+    display: table-row !important;
+}
+
+
+textarea {
+    resize: none;
+}
+
+.myuploadedfiles {
+    color: blue;
+    font-size: 12px;
+}
+
+.WrapComments {
+    word-wrap: break-word!important;
+    width: 100%!important;
+    Overflow:auto!important;
+    width:100%!important;
+    max-height:500px;
+}
+/*devexpress Custom Css*/
+.dxeHyperlink {
+    font: normal 10px kalinga !important;
+    color: #0d45b7 !important;
+}
+
+#ContentPlaceHolder1_popupControl_PW-1 {
+    width: 100% !important;
+}
+
+/*custom table style*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+.custom-table{
+	width:100%;
+	border:none !important;
+	font-family: 'Inter', sans-serif;
+}
+.custom-table-header{
+	background:#D4D4E2;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 13px;
+	letter-spacing: 0.02em;
+	color: #2A2932 !important;
+	font-family: 'Inter', sans-serif;
+	text-transform:uppercase;
+	padding:10px
+}
+.dxgvControl, .dxgvDisabled{
+	font-family: 'Inter', sans-serif !important;
+	background:#D4D4E2 !important;
+}
+.dxgvTable .dxgvDataRowAlt{
+	background:#fff !important
+}
+.dxgvHeader, .dxgvHeader table{
+	color: #2A2932 !important;
+}
+.dxgvEditFormDisplayRow td.dxgv, .dxgvDataRow td.dxgv, .dxgvDataRowAlt td.dxgv, .dxgvSelectedRow td.dxgv, .dxgvFocusedRow td.dxgv {
+  overflow: hidden;
+  border-bottom: 1px Solid #D4D4E2;
+  border-right: 1px Solid #D4D4E2;
+  border-top-width: 0;
+  border-left-width: 0;
+  padding: 10px;
+  font-size:13px;
+  letter-spacing: 0.02em;
+  color:#2A2932
+}

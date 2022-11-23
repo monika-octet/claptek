@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css">
+    <!--date picker -->
+    <link rel="stylesheet" href="plugin/bootstrap-multiselect/bootstrap-multiselect.css" type="text/css">
+    <!-- picker -->
+    <link rel="stylesheet" href="plugin/picker/picker.min.css" type="text/css">
+    <!--date picker -->
+    <link rel="stylesheet" href="plugin/datepicker/datepicker.css" type="text/css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Scenario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Mange Scenario</a></li>
+                            <li><a class="dropdown-item" href="#">Auto Closer Configuration</a></li>
+                            <li><a class="dropdown-item" href="#">Unassigned Report</a></li>
+                            <li><a class="dropdown-item" href="#">In Active User Report</a></li>
+                            <li><a class="dropdown-item" href="#">Delete Exceptions</a></li>
+                            <li><a class="dropdown-item" href="#">Stage Traversal Plan</a></li>
+                            <li><a class="dropdown-item" href="#">Questions</a></li>
+                            <li><a class="dropdown-item" href="#">Answer Template</a></li>
+                            <li><a class="dropdown-item" href="#">Answer Template Master</a></li>
+                            <li><a class="dropdown-item" href="#">Data Integration Staging Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">User Management</a></li>
+                            <li><a class="dropdown-item" href="#">Group Management</a></li>
+                            <li><a class="dropdown-item" href="#">Access Rights Management</a></li>
+                            <li><a class="dropdown-item" href="#">Profile Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Config
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Master</a></li>
+                            <li><a class="dropdown-item" href="#">Smarten</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Reports</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+                    <img src="images/powerby.svg" alt="">
+                    <div class="profile-name">JD</div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center my-20">
+                <h1 class="mb-0">Add New Scenario</h1>
+                <div>
+                    <button class="btn btn-light me-2">Cancel</button>
+                    <button class="btn btn-outline-primary me-2">Save as draft</button>
+                    <button class="btn btn-primary">Create New</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+                        <ul class="list-group list-group-flush left-panel">
+                            <li class="list-group-item"><a href="#">Basic Details</a></li>
+                            <li class="list-group-item"><a href="#">Reports Field Details</a></li>
+                            <li class="list-group-item"><a href="#">Scenario Details</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="rightpanel">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details</h5>
+                                    <div class="row gx-3">
+                                        <div class="col-md-3 mb-3">
+                                            <label class="form-label">Scenario Number <sup>*</sup></label>
+                                            <input type="text" class="form-control" placeholder="Enter Scenario Number">
+                                        </div>
+                                        <div class="col-md-9 mb-3">
+                                            <label class="form-label">Scenario Name <sup>*</sup></label>
+                                            <input type="text" class="form-control" placeholder="Enter Scenario Name">
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label class="form-label">Scenario Report Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Scenario Report Name">
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label class="form-label">Scenario Description</label>
+                                            <textarea type="text" class="form-control" placeholder="Enter Scenario Description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row gx-3">
+                                        <label class="form-label">Profile Selection</label>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-check form-check-box">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch1">
+                                                <label class="form-check-label" for="ch1">
+                                                    Offsite Monitoring Unit_AF_OE	
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-check form-check-box">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch2">
+                                                <label class="form-check-label" for="ch2">
+                                                    Offsite Monitoring Unit_AF_OE	
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-check form-check-box">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch3">
+                                                <label class="form-check-label" for="ch3">
+                                                    Offsite Monitoring Unit_AF_OE	
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-check form-check-box">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch4">
+                                                <label class="form-check-label" for="ch4">
+                                                    Offsite Monitoring Unit_AF_OE	
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-check form-check-box">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch5">
+                                                <label class="form-check-label" for="ch5">
+                                                    Offsite Monitoring Unit_AF_OE	
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="form-check form-check-box">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch6">
+                                                <label class="form-check-label" for="ch6">
+                                                    Offsite Monitoring Unit_AF_OE	
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Reports Field Details</h5>
+                                    <select id="demo" multiple="multiple">
+                                        <option value="acd">Account_activation_date</option>
+                                        <option value="an">Account_name</option>
+                                        <option value="an_">Account_name_</option>
+                                        <option value="acd">Account_activation_date_Account_activation_date</option>
+                                    </select>
+                                    <div class="col-md-12 mt-3">
+                                        <ul class="selected-tag-list">
+                                            <li>Account_activation_date<span><img src="images/tag-close.svg" alt=""></span></li>
+                                            <li>Account_name<span><img src="images/tag-close.svg" alt=""></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Scenario Details</h5>
+                                    <div class="row gx-3">
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label">Scenario Creation Date <sup>*</sup></label>
+                                            <div class="datepicker-box">
+                                                <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label">Frequency <sup>*</sup></label>
+                                            <select name="basic" class="picker-select">
+                                                <option value="" disabled hidden>Select</option>
+                                                <option value="1">Frequency 1</option>
+                                                <option value="2">Frequency 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label">Scenario Category</label>
+                                            <select name="basic" class="picker-select">
+                                                <option value="" disabled hidden>Select</option>
+                                                <option value="1">Scenario Category 1</option>
+                                                <option value="2">Scenario Category 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label">Sub Category 1</label>
+                                            <select name="basic" class="picker-select">
+                                                <option value="" disabled hidden>Select</option>
+                                                <option value="1">Sub Category 1</option>
+                                                <option value="2">Sub Category 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label">Sub Category 2</label>
+                                            <select name="basic" class="picker-select">
+                                                <option value="" disabled hidden>Select</option>
+                                                <option value="1">Sub Category 1</option>
+                                                <option value="2">Sub Category 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label class="form-label">Scenario Status</label>
+                                            <select name="basic" class="picker-select">
+                                                <option value="" disabled hidden>Select</option>
+                                                <option value="1">Scenario Status 1</option>
+                                                <option value="2">Scenario Status 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h5 class="card-title">Workflows</h5>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="ch7">
+                                                <label class="form-check-label" for="ch7">
+                                                    Work Flow Applicability	
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inner-tab-wrap">
+                                        <ul class="nav nav-tabs inner-tab-list" id="myTab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#in1" type="button" role="tab" aria-selected="true">Scenario Owner</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#in2" type="button" role="tab" aria-selected="false">Validation Criteria</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#in3" type="button" role="tab" aria-selected="false">Questions Allocation</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#in4" type="button" role="tab" aria-selected="false">Attach Help File</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#in5" type="button" role="tab"  aria-selected="false">Allocated Rules</button>
+                                              </li>
+                                        </ul>
+                                        <div class="tab-content inner-tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="in1" role="tabpanel">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="sub-card-title mb-3">Scenario Owner</div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label class="form-label">Primary Owner</label>
+                                                                <input type="text" class="form-control" placeholder="Enter Primary Owner">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-label">Secondary Owner</label>
+                                                                <input type="text" class="form-control" placeholder="Enter Secondary Owner">
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-card-title mt-4 mb-3">Data Analysis By</div>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <label class="form-label">Audit Officer 1 Emp Code <sup>*</sup></label>
+                                                                <input type="text" class="form-control" placeholder="Enter Audit Officer 1 Emp Code">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-label">Audit Officer Emp Code <sup>*</sup></label>
+                                                                <input type="text" class="form-control" placeholder="Enter Audit Officer Emp Code">
+                                                            </div>
+                                                        </div>
+                                                        <div class="sub-card-title mt-4 mb-3">Response Reviewer</div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                                    <label class="form-check-label" for="inlineRadio1">Same as Data Analysis By</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                    <label class="form-check-label" for="inlineRadio2">At Alert Level</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                                    <label class="form-check-label" for="inlineRadio3">At Scenario Level</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-4 mb-3">
+                                                            <div class="col-md-6">
+                                                                <label class="form-label">Closure Reviewer Level 1</label>
+                                                                <input type="text" class="form-control" placeholder="Enter Closure Reviewer Level 1">
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="form-label">Closure Reviewer Level 2</label>
+                                                                <input type="text" class="form-control" placeholder="Enter Closure Reviewer Level 2">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="tab-pane fade" id="in2" role="tabpanel">...</div>
+                                            <div class="tab-pane fade" id="in3" role="tabpanel">...</div>
+                                            <div class="tab-pane fade" id="in4" role="tabpanel">...</div>
+                                            <div class="tab-pane fade" id="in5" role="tabpanel">...</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- script -->
+    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="plugin/datepicker/datepicker.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('.picker-select').picker();
+            $('[data-toggle="datepicker"]').datepicker({
+                format: 'dd/mm/yyyy'
+            });
+            $('#demo').multiselect({
+                numberDisplayed: 1
+            });
+        });
+    </script>
+    <script src="plugin/bootstrap-multiselect/bootstrap-multiselect.js" type="text/javascript"></script>
+
+</body>
+
+</html>
