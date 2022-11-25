@@ -720,6 +720,11 @@ tbody > tr > td {
   color: #219d82;
 }
 
+.btn-outline-success:hover {
+  background: #219d82 !important;
+  color: #fff !important;
+}
+
 .w-15 {
   width: 15%;
 }
@@ -746,6 +751,6 @@ tbody > tr > td {
   background-color: #d4d4e2 !important;
 }
 
-.text-pink{
-  color: #9A3131;
+.text-pink {
+  color: #9a3131;
 }
