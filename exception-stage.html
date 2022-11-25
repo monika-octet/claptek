@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exception Stage</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css" />
+    <!-- picker -->
+    <link rel="stylesheet" href="plugin/picker/picker.min.css" type="text/css" />
+    <link rel="stylesheet" href="plugin/datepicker/datepicker.css" type="text/css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Scenario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Mange Scenario</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Auto Closer Configuration</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Unassigned Report</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">In Active User Report</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Delete Exceptions</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Stage Traversal Plan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Questions</a></li>
+                            <li><a class="dropdown-item" href="#">Answer Template</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Answer Template Master</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Data Integration Staging Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="user-management.html">User Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="role-management.html">Roles Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="profile-management.html">Profile Management</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Config
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="exception-stage.html">Exception Stage</a></li>
+                            <li><a class="dropdown-item" href="fields-library.html">Fields Library</a></li>
+                            <li><a class="dropdown-item" href="ageing-master.html">Ageing Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Reports</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <img src="images/powerby.svg" alt="" />
+                    <div class="profile-name">JD</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center my-20">
+                <h1 class="mb-0">Exception Stage</h1>
+                <div class="col text-end">
+                    <button class="btn btn-outline btn-outline-success me-2" data-bs-toggle="modal" data-bs-target="#create-profile">
+                        Sequencing
+                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-profile">
+                        Create New
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <ul class="nav nav-pills mb-3 main-tab" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+                        type="button" role="tab" aria-controls="pills-all" aria-selected="true">
+                        All (16)
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-enabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-enabled" type="button" role="tab" aria-controls="pills-enabled"
+                        aria-selected="false">
+                        Enabled
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                        aria-selected="false">
+                        Disabled
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content main-tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="all-donor-grid table-holder">
+                        <table class="table table-bordered table-responsive table-sticky mb-0 position-relative">
+                            <thead>
+                                <tr class="table-row">
+                                    <th scope="col">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <th scope="col">STAGE NAME</th>
+                                    <th scope="col">STATUS</th>
+                                    <th scope="col">IS PART OF ALLOCATION</th>
+                                    <th scope="col">IS START STAGE</th>
+                                    <th scope="col">IS END STAGE</th>
+                                    <th scope="col">SHOW ALL REPORT FIELDS</th>
+                                    <th scope="col">MAKER ID</th>
+                                    <th scope="col">CREATED ON</th>
+                                    <th scope="col">MODIFIED ON</th>
+                                    <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center" scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="" />
+                                    </td>
+                                    <th class="sticky-column py-1"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td class="w-15">True</td>
+                                    <td class="w-8">True</td>
+                                    <td class="w-8">False</td>
+                                    <td class="w-15">False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>R1</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>C2</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Dropped</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
+                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>SMAL512</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <td class="w-15">20 Feb 2021 at 20:35</td>
+                                    <th class="sticky-column py-1">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-profile"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <button data-bs-toggle="modal" data-bs-target="#delete-profile"
+                                                class="btn btn-sm btn-dot" type="button">
+                                                <img src="images/delete.svg" alt="" />
+                                            </button>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="all-donor-grid">
+                        <div class="pagination-wrap mt-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <span>Show</span>
+                                        <select class="form-select picker-select" name="code" style="display: none">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <div class="picker">
+                                            <span class="pc-select"><span class="pc-element pc-trigger">1</span><span
+                                                    class="pc-list" style="display: none">
+                                                    <ul>
+                                                        <li data-id="1" data-order="0">1</li>
+                                                        <li data-id="2" data-order="1">2</li>
+                                                        <li data-id="3" data-order="2">3</li>
+                                                        <li data-id="4" data-order="3">4</li>
+                                                    </ul>
+                                                </span></span>
+                                        </div>
+                                        <span>Entries</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <span>Total Pages 04:</span>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                        <img src="images/prev.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">
+                                                        <img src="images/next.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    ...
+                </div>
+                <div class="tab-pane fade" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab">
+                    ...
+                </div>
+            </div>
+        </section>
+
+        <!-- Create Profile Modal -->
+        <div class="modal fade" id="create-profile" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header row justify-content-between">
+                        <div class="col">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Create New Profile
+                            </h5>
+                        </div>
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+                                Cancel
+                            </button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                    <div class="modal-body main-tab-content py-0">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="col-md-2 sidebar-section">
+                                <ul class="nav flex-column fixed-sidenav">
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link active" aria-current="page" href="#">Basic
+                                            Details</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link" href="#">Users Details</a>
+                                    </li>
+
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link" href="#">Scenario Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-10 user-modal-right-section">
+                                <div class="card p-3 mb-3">
+                                    <h3 class="section-heading">Basic Details</h3>
+                                    <form class="mt-2">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <label for="inputText4" class="form-label">Profile Name</label>
+                                                <input type="text" class="form-control" id="inputText4"
+                                                    placeholder="Enter Profile Name" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputText4" class="form-label">Profile Description</label>
+                                                <textarea class="form-control" placeholder="Enter Profile Description"
+                                                    id="floatingTextarea"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="card p-3 mb-3">
+                                    <h3 class="section-heading">Users Details</h3>
+                                    <div class="col-md-4">
+                                        <label for="inputText4" class="form-label">User</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select User</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="card p-3">
+                                    <h3 class="section-heading">Scenario Details</h3>
+                                    <div class="col-md-4">
+                                        <label for="inputText4" class="form-label">Scenario</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Scenario</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Role Modal -->
+        <div class="modal fade" id="edit-profile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header row justify-content-between">
+                        <div class="col">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Update Profile
+                            </h5>
+                        </div>
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+                                Cancel
+                            </button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                        </div>
+                    </div>
+                    <div class="modal-body main-tab-content py-0">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="col-md-2 sidebar-section">
+                                <ul class="nav flex-column fixed-sidenav">
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link active" aria-current="page" href="#">Basic
+                                            Details</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link" href="#">Users Details</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link" href="#">Scenario Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-10 user-modal-right-section">
+                                <div class="card p-3 mb-3">
+                                    <h3 class="section-heading">Basic Details</h3>
+                                    <form class="mt-2">
+                                        <div class="row g-3">
+                                            <div class="col-12">
+                                                <label for="inputText4" class="form-label">Role Name</label>
+                                                <input type="text" class="form-control" id="inputText4"
+                                                    value="MYTEST_NewSubMutest" placeholder="Enter Role Name" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputText4" class="form-label">Role Description</label>
+                                                <textarea class="form-control h-176"
+                                                    placeholder="Enter Role Description" id="floatingTextarea" value="">Test Description
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="card p-3 mb-3">
+                                    <h3 class="section-heading">Users Details</h3>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="inputText4" class="form-label">User</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select User</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-start align-items-center">
+                                        <div class="me-2">
+                                            <div class="selected-user align-items-center">
+                                                <img src="images/move-icon.svg" alt="" class="pointer">
+                                                <span>Botadmin</span>
+                                                <img src="images/close-cross.svg" alt="" class="pointer">
+                                            </div>
+                                        </div>
+
+                                        <div class="me-2">
+                                            <div class="selected-user align-items-center">
+                                                <img src="images/move-icon.svg" alt="" class="pointer">
+                                                <span>Krunal Pawar</span>
+                                                <img src="images/close-cross.svg" alt="" class="pointer">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card p-3">
+                                    <h3 class="section-heading">Scenario Details</h3>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="inputText4" class="form-label">Scenario</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Scenario</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-flex flex-wrap justify-content-start align-items-center">
+                                        <div class="me-2">
+                                            <div class="selected-user align-items-center">
+                                                <img src="images/move-icon.svg" alt="" class="pointer">
+                                                <span>66/Alert/Gen/Date</span>
+                                                <img src="images/close-cross.svg" alt="" class="pointer">
+                                            </div>
+                                        </div>
+
+                                        <div class="me-2">
+                                            <div class="selected-user align-items-center">
+                                                <img src="images/move-icon.svg" alt="" class="pointer">
+                                                <span>Atul Check nbsp</span>
+                                                <img src="images/close-cross.svg" alt="" class="pointer">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scenario list Popup Modal -->
+        <div class="modal fade" id="scenario-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content delete-user-modal">
+                    <div class="modal-header border-0 pb-0 d-flex justify-content-end">
+                        <a type="button" data-bs-dismiss="modal" aria-label="Close"><img src="images/close-cross.svg"
+                                alt=""></a>
+                    </div>
+                    <div class="modal-body p-4">
+                        <h3 class="section-heading">Scenario</h3>
+                        <ul class="list-group modal-list">
+                            <li class="list-group-item">Test InfromatIve</li>
+                            <li class="list-group-item">New Testing Sub Unit</li>
+                            <li class="list-group-item">atul check nbsp</li>
+                            <li class="list-group-item">validating</li>
+                            <li class="list-group-item">hgchgf</li>
+                            <li class="list-group-item">aaaa</li>
+                            <li class="list-group-item">NewAnalysisTestingOn03012020</li>
+                            <li class="list-group-item">Test Create Trigger	</li>
+                            <li class="list-group-item">Alert Id Trigger</li>
+                            <li class="list-group-item">Test Create Trigger</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User list Popup Modal -->
+        <div class="modal fade" id="user-list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content delete-user-modal">
+                    <div class="modal-header border-0 pb-0 d-flex justify-content-end">
+                        <a type="button" data-bs-dismiss="modal" aria-label="Close"><img src="images/close-cross.svg"
+                                alt=""></a>
+                    </div>
+                    <div class="modal-body p-4">
+                        <h3 class="section-heading">Users</h3>
+                        <ul class="list-group modal-list">
+                            <li class="list-group-item">John Doe</li>
+                            <li class="list-group-item">Alex Doe</li>
+                            <li class="list-group-item">Alphius Gons</li>
+                            <li class="list-group-item">Amogh Samant</li>
+                            <li class="list-group-item">Samant</li>
+                            <li class="list-group-item">Krunal</li>
+                            <li class="list-group-item">Manish</li>
+                            <li class="list-group-item">Jignesh Gupta</li>
+                            <li class="list-group-item">Nirav</li>
+                            <li class="list-group-item">Mitesh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Role Popup Modal -->
+        <div class="modal fade" id="delete-profile" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content delete-user-modal">
+                    <div class="modal-body p-5 d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                            <img src="images/delete-modal-img.svg" alt="" class="mb-3" />
+                            <h3 class="mb-3 delete-modal-heading">
+                                Are you sure you want to Delete Profile?
+                            </h3>
+                            <p class="mb-3 delete-modal-text">
+                                By deleteing profile you will removing all users and roles assigned
+                            </p>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                    Cancel
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- script -->
+    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        const template = document.getElementById("template");
+        // tippy('.myTooltip', {
+        //     content: template.innerHTML,
+        //     placement: 'right',
+        //     allowHTML: true,
+        //     theme: 'blue',
+        // });
+        tippy("[data-tippy-content]", {
+            theme: "blue-small",
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#open-subgrid").click(function () {
+                $(".grid-sub-row").toggle();
+                $(this).parents(".grid-wrap").toggleClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
