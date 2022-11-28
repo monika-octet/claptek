@@ -36,10 +36,19 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pendancy-dashboard.html">Pendancy Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Scenario
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Mange Scenario</a></li>
+                            <li><a class="dropdown-item" href="manage-scenario.html">Manage Scenario</a></li>
                             <li>
                                 <a class="dropdown-item" href="#">Auto Closer Configuration</a>
                             </li>
@@ -51,8 +60,8 @@
                             <li>
                                 <a class="dropdown-item" href="#">Stage Traversal Plan</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Questions</a></li>
-                            <li><a class="dropdown-item" href="#">Answer Template</a></li>
+                            <li><a class="dropdown-item" href="questions.html">Questions</a></li>
+                            <li><a class="dropdown-item" href="answer-template.html">Answer Template</a></li>
                             <li>
                                 <a class="dropdown-item" href="#">Answer Template Master</a>
                             </li>
@@ -105,7 +114,22 @@
             <div class="d-flex justify-content-between align-items-center my-20">
                 <div>
                     <h1 class="mb-3">Ageing Master Details</h1>
-                    <a class="link-text-black">+ Custom</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link link-text-black dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/plus-fill.svg" alt="" class="me-1">Custom
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Name</a></li>
+                            <li><a class="dropdown-item" href="#">Criteria</a></li>
+                            <li><a class="dropdown-item" href="#">Value 1</a></li>
+                            <li><a class="dropdown-item" href="#">Value 2</a></li>
+                            <li><a class="dropdown-item" href="#">Created Date</a></li>
+                            <li><a class="dropdown-item" href="#">Modified Date</a></li>
+                            <li><a class="dropdown-item" href="#">Maker ID</a></li>
+                            <li><a class="dropdown-item" href="#">Modified By ID</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col text-end">
@@ -120,8 +144,8 @@
             </div>
         </section>
         <section class="ageing-master-section">
-            <div class="all-donor-grid table-holder">
-                <table class="table table-bordered table-responsive table-sticky mb-0 position-relative">
+            <div class="all-donor-grid table-holder position-relative">
+                <table class="table table-bordered table-sticky mb-0">
                     <thead>
                         <tr class="table-row">
                             <th scope="col">

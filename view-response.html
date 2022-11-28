@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Response</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css" />
+    <!-- picker -->
+    <link rel="stylesheet" href="plugin/picker/picker.min.css" type="text/css" />
+    <link rel="stylesheet" href="plugin/datepicker/datepicker.css" type="text/css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pendancy-dashboard.html">Pendancy Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Scenario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="manage-scenario.html">Manage Scenario</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Auto Closer Configuration</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Unassigned Report</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">In Active User Report</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Delete Exceptions</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Stage Traversal Plan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="questions.html">Questions</a></li>
+                            <li><a class="dropdown-item" href="answer-template.html">Answer Template</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Answer Template Master</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Data Integration Staging Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="user-management.html">User Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="role-management.html">Roles Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="profile-management.html">Profile Management</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Config
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="exception-stage.html">Exception Stage</a></li>
+                            <li><a class="dropdown-item" href="fields-library.html">Fields Library</a></li>
+                            <li><a class="dropdown-item" href="ageing-master.html">Ageing Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Reports</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <img src="images/powerby.svg" alt="" />
+                    <div class="profile-name">JD</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center my-20">
+                <div>
+                    <h1 class="mb-0 page-title">
+                        <a class="pendancy-home-link" href="pendancy-dashboard.html">Pendancy
+                            Dasboard</a>
+                        <span class="mx-2">
+                            <img src="images/breadcrumb-right.svg" alt="">
+                        </span>
+                        <a href="pendancy-option-2.html" class="pendancy-home-link">Exception of Dp Less Than
+                            Balance</a>
+                        <span class="mx-2">
+                            <img src="images/breadcrumb-right.svg" alt="">
+                        </span>
+                        <span class="breadcrumb-active">Alert
+                            Details Of Dp Less Than Balance</span>
+                    </h1>
+                </div>
+                <div>
+                    <div class="d-flex">
+                        <div class="dropdown me-2">
+                            <a class="btn btn-light btn-light-custom d-flex justify-content-between align-items-center" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Update<span class="ms-3"><img src="images/arrow-down.svg"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Response</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Questions (Assignments)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown me-2">
+                            <a class="btn btn-light btn-light-custom" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Download<span class="ms-3"><img src="images/arrow-down.svg"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts List</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Alert Assignment</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">View Assignment Details</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Bulk Export</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Dropped Export</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <a class="btn btn-light btn-light-custom" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Upload<span class="ms-3"><img src="images/arrow-down.svg"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts Reponse</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alert Assignment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="field-library-section h-100vh">
+            <div class="all-donor-grid table-holder position-relative">
+                <table class="table table-bordered table-sticky mb-0">
+                    <thead>
+                        <tr class="table-row">
+                            <th scope="col" class="sticky-column-left">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <th scope="col">RESPONSE</th>
+                            <th scope="col">COMMENT</th>
+                            <th scope="col">ALERT ID</th>
+                            <th scope="col">CLOSURE REVIEWER</th>
+                            <th scope="col">STATUS</th>
+                            <th scope="col">GROUP ID</th>
+                            <th scope="col">ACCOUNT ACTIVATION DATE</th>
+                            <th scope="col">ACCOUNT NUMBER</th>
+                            <th scope="col">ACCOUNT OPEN DATE</th>
+                            <th scope="col">ACCOUNT STATUS CURRENT</th>
+                            <th scope="col">ACCOUNT TITLE</th>
+                            <th scope="col">ACCOUNT CUST REL</th>
+                            <th scope="col">ACL REMARK</th>
+                            <th scope="col">ALERT ID</th>
+                            <th scope="col">AUDIT FROM DATE</th>
+                            <th scope="col">AUDIT TO DATE</th>
+                            <th scope="col">AUS CUSTOMER ID</th>
+                            <th scope="col">AUS CUSTOMER DATE</th>
+                            <th scope="col">AUS CUSTOMER TYPE</th>
+                            <th scope="col">AUS PAN NO.</th>
+                            <th scope="col">BRANCH CODE</th>
+                            <th scope="col">COUNT CT</th>
+                            <th scope="col">CUSTOMER ID</th>
+                            <th scope="col">CUSTOMER TYPE</th>
+                            <th scope="col">CUSTOMER TYPE DECRIPTION</th>
+                            <th scope="col">DATE LAST MANTAINENCE</th>
+                            <th scope="col">DATE OF ALERT</th>
+                            <th scope="col">FLAGING CMP</th>
+                            <th scope="col">HIST MATCH COMB</th>
+                            <th scope="col">INVALID CODE</th>
+                            <th scope="col">LC CODE</th>
+                            <th scope="col">LG CODE</th>
+                            <th scope="col">MAILING ADDRESS LINE 1</th>
+                            <th scope="col">MAILING ADDRESS LINE 2</th>
+                            <th scope="col">MAILING ADDRESS LINE 3</th>
+                            <th scope="col">MAILING ADDRESS STATE</th>
+                            <th scope="col">MIS CODE</th>
+                            <th scope="col">PAN NO.</th>
+                            <th scope="col">PIN CODE</th>
+                            <th scope="col">PRODUCT CODE</th>
+                            <th scope="col">PRODUCT CODE DESCRIPTION</th>
+                            <th scope="col">PRODUCT TYPE DESCRIPTION</th>
+                            <th scope="col">RM BRANCH</th>
+                            <th scope="col">RM CODE</th>
+                            <th scope="col">EMPLOYEE CODE</th>
+                            <th scope="col">GROUP STATUS</th>
+                            <th class="sticky-column sticky-column-three-icon bg-table-header py-1 d-flex justify-content-start align-items-center"
+                                scope="col">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <th scope="row" class="sticky-column-left"></th>
+                            <td>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <th class="sticky-column sticky-column-three-icon py-1"></th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="all-donor-grid">
+                <div class="pagination-wrap mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <span>Show</span>
+                                <select class="form-select picker-select" name="code" style="display: none">
+                                    <option value="1" selected="selected">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <div class="picker">
+                                    <span class="pc-select"><span class="pc-element pc-trigger">1</span><span
+                                            class="pc-list" style="display: none">
+                                            <ul>
+                                                <li data-id="1" data-order="0">1</li>
+                                                <li data-id="2" data-order="1">2</li>
+                                                <li data-id="3" data-order="2">3</li>
+                                                <li data-id="4" data-order="3">4</li>
+                                            </ul>
+                                        </span></span>
+                                </div>
+                                <span>Entries</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end align-items-center">
+                                <span>Total Pages 04:</span>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                <img src="images/prev.svg" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <img src="images/next.svg" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Create Question Modal -->
+        <div class="modal fade" id="create-question" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header row justify-content-between">
+                        <div class="col">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Create New Questions
+                            </h5>
+                        </div>
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+                                Cancel
+                            </button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                    <div class="modal-body main-tab-content py-0">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="col-md-2 sidebar-section">
+                                <ul class="nav flex-column fixed-sidenav">
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link active" aria-current="page" href="#">Question
+                                            Library</a>
+                                    </li>
+                                    <li class="nav-item position-relative">
+                                        <a class="nav-link sidebar-link" href="#">Nested Questions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-10 user-modal-right-section">
+                                <div class="card p-3 mb-3">
+                                    <h3 class="section-heading">Question Library Details</h3>
+                                    <div class="col-md-7 mt-3">
+                                        <label for="inputText4" class="form-label">Question Set <sup>*</sup></label>
+                                        <div class="dropdown">
+                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select
+                                            </button>
+                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_activation_date</label>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_name</label>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_no</label>
+                                                    </div>
+                                                </li>
+                                                <li class=" dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_number</label>
+                                                    </div>
+                                                </li>
+                                            </ul> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <a class="link-text-success d-flex align-items-center" role="button"
+                                            data-bs-toggle="modal" data-bs-target="#add-question"><img
+                                                src="images/plus.svg" alt="" class="me-2">New Question Set</a>
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <label for="inputText4" class="form-label">Question Number <sup>*</sup></label>
+                                        <input type="text" class="form-control" id="inputText4"
+                                            placeholder="Enter Question Number" />
+                                    </div>
+                                    <hr class="my-3 my-hr">
+                                    <div class="col-md-7">
+                                        <label for="inputText4" class="form-label">Question <sup>*</sup></label>
+                                        <input type="text" class="form-control" id="inputText4"
+                                            placeholder="Enter Question" />
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <label for="inputText4" class="form-label">Answer Type <sup>*</sup></label>
+                                        <div class="dropdown">
+                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select
+                                            </button>
+                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_activation_date</label>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_name</label>
+                                                    </div>
+                                                </li>
+                                                <li class="mb-2 pb-2 dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_no</label>
+                                                    </div>
+                                                </li>
+                                                <li class=" dropdown-item-select">
+                                                    <div class="form-check d-flex align-items-center">
+                                                        <input class="form-check-input me-2" type="checkbox"
+                                                            id="inlineCheckbox1" value="option1" />
+                                                        <label class="form-check-label select-dropdown-label"
+                                                            for="inlineCheckbox1">Account_number</label>
+                                                    </div>
+                                                </li>
+                                            </ul> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <a class="link-text-success d-flex align-items-center" role="button"
+                                            data-bs-toggle="modal" data-bs-target="#answer-type"><img
+                                                src="images/plus.svg" alt="" class="me-2">New Answer Type</a>
+                                    </div>
+                                </div>
+
+                                <div class="card p-3 mb-3">
+                                    <h3 class="section-heading">Nested Questions</h3>
+                                    <div class="col-md-7 mt-3">
+                                        <label for="inputText4" class="form-label">Depends On</label>
+                                        <div class="dropdown">
+                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select
+                                            </button>
+                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_activation_date</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_expiry_date</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_name</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_no</label>
+                                                </div>
+                                            </li>
+                                            <li class=" dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_number</label>
+                                                </div>
+                                            </li>
+                                        </ul> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <label for="inputText4" class="form-label">Answer Of Questions</label>
+                                        <div class="dropdown">
+                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Select
+                                            </button>
+                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_activation_date</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_expiry_date</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_name</label>
+                                                </div>
+                                            </li>
+                                            <li class="mb-2 pb-2 dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_no</label>
+                                                </div>
+                                            </li>
+                                            <li class=" dropdown-item-select">
+                                                <div class="form-check d-flex align-items-center">
+                                                    <input class="form-check-input me-2" type="checkbox"
+                                                        id="inlineCheckbox1" value="option1" />
+                                                    <label class="form-check-label select-dropdown-label"
+                                                        for="inlineCheckbox1">Account_number</label>
+                                                </div>
+                                            </li>
+                                        </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <!-- Add Question Popup Modal -->
+    <div class="modal fade" id="add-question" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content delete-user-modal">
+                <div class="modal-body p-4">
+                    <div class="text-start mb-3">
+                        <h3 class="mb-3 delete-modal-heading">
+                            Question Set Details
+                        </h3>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Question Set Code</label>
+                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Question Set Code" />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Question Set Name</label>
+                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Question Set Name" />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Description</label>
+                        <textarea class="form-control filled-textarea" placeholder="Enter Description"
+                            id="floatingTextarea"></textarea>
+                    </div>
+                    <div class="mt-3">
+                        <p class="form-label mb-2">Status</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Enable</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Disable</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col text-start">
+                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Answer Type Popup Modal -->
+    <div class="modal fade" id="answer-type" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content delete-user-modal">
+                <div class="modal-body p-4">
+                    <div class="text-start mb-3">
+                        <h3 class="mb-3 delete-modal-heading">
+                            Answer Template Info
+                        </h3>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Answer Template Name <sup>*</sup></label>
+                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Question Set Code" />
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Response Type</label>
+                        <div class="dropdown">
+                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select
+                            </button>
+                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Data Type <sup>*</sup></label>
+                        <div class="dropdown">
+                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select
+                            </button>
+                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Select Answer Template Master</label>
+                        <div class="dropdown">
+                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select
+                            </button>
+                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="inputText4" class="form-label">Dropdown Header Fields</label>
+                        <div class="dropdown">
+                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select
+                            </button>
+                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="form-label mb-2">Does Allow Future Date?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="form-label mb-2">Does Allow Past Date?</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col text-start">
+                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        const template = document.getElementById("template");
+        // tippy('.myTooltip', {
+        //     content: template.innerHTML,
+        //     placement: 'right',
+        //     allowHTML: true,
+        //     theme: 'blue',
+        // });
+        tippy("[data-tippy-content]", {
+            theme: "blue-small",
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#open-subgrid").click(function () {
+                $(".grid-sub-row").toggle();
+                $(this).parents(".grid-wrap").toggleClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
