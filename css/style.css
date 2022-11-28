@@ -759,15 +759,15 @@ tbody > tr > td {
   background-color: #ffffff !important;
 }
 
-.sticky-column-three-icon{
-  width: 115px!important;
+.sticky-column-three-icon {
+  width: 115px !important;
 }
 
 .table-manage-scenario {
   width: 3000px !important;
 }
 
-.table-answer-template{
+.table-answer-template {
   width: 2200px !important;
 }
 
@@ -890,12 +890,12 @@ tbody > tr > td {
   color: #484653;
 }
 
-.h-35px{
-  height: 35px!important;
+.h-35px {
+  height: 35px !important;
 }
 
 .btn-select-full-width.dropdown-toggle {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .dropdown-menu-select {
@@ -909,24 +909,81 @@ tbody > tr > td {
   border-bottom: 1px solid #ededef;
 }
 
-.select-dropdown-label{
-  font-weight: 400!important;
-  font-size: 14px!important;
-  line-height: 17px!important;
-  color: #2a2932!important;
+.select-dropdown-label {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: #2a2932 !important;
 }
 
-.my-hr{
-  border: 1px solid #DDDDE7;
+.my-hr {
+  border: 1px solid #dddde7;
   height: 0px;
 }
 
 /* pendancy dashboard */
 
-.h-100vh{
-  height: 100vh!important;
+.h-100vh {
+  height: 100vh !important;
 }
 
-.w-11{
+.w-11 {
   width: 11%;
+}
+
+.btn-light-custom {
+  background: #f3f3f5;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #2a2932;
+}
+
+.w-24 {
+  width: 24%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.table-td-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #5555ff;
+  text-decoration: none;
+}
+
+.pendancy-home-link {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #2a2932;
+  text-decoration: none;
+}
+
+.pendancy-home-link:hover {
+  color: #2a2932;
+}
+
+.breadcrumb-active {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #2a2932;
+}
+
+.dropdown-item-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2a2932;
 }
