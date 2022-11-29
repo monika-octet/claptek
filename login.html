@@ -23,21 +23,43 @@
 <body>
     <main>
         <section class="w-100 p-0 m-0">
-            <div class="d-flex justify-content-between align-items-center mb-0">
-                <div class="login-left-column col-md-5 padding-20px bg-dark">
+            <div class="d-flex justify-content-between mb-0 h-100vh">
+                <div class="login-left-column col-md-5 padding-30px bg-dark">
                     <div class="logo">
                         <img src="images/claptek-logo.svg" alt="" class="img-fluid">
                     </div>
                     <div class="content text-center p-5">
                         <div class="p-4">
                             <h1 class="login-heading">Welcome To Claptek</h1>
-                            <p class="login-para">Lörem ipsum hexaktig oska. Nira bidöhet. Ade prolyrat suprase och primapod un. Regäheten lagt i yr sas regon. Galigt vatysade. </p>
+                            <p class="login-para mb-0">Lörem ipsum hexaktig oska. Nira bidöhet. Ade prolyrat suprase och
+                                primapod un. Regäheten lagt i yr sas regon. Galigt vatysade. </p>
                         </div>
-                        <img src="images/login-image.svg" alt="" class="login-screen-img">
+                        <div class="p-5 text-center">
+                            <img src="images/login-image.svg" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                <div class="login-right-column col-md-7 px-0">
-                    
+                <div class="login-right-column col-md-7">
+                    <div class="content d-flex flex-column justify-content-center" style="height: 356px;">
+                        <div class="form-text mb-4">
+                            <h2 class="form-heading">Login</h2>
+                            <p class="form-para mb-0">Please fill the below details to login your account.</p>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputText1" class="form-label login-form-label">User ID</label>
+                                <input type="text" class="form-control form-input-field" id="exampleInputText1" placeholder="Enter your user id">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label login-form-label">Password</label>
+                                <input type="password" class="form-control form-input-field" id="exampleInputPassword1" placeholder="Enter password">
+                            </div>
+                            <div class="mb-3 text-end">
+                                <a href="#" class="link-text-black forgot-password-link">Forgot Password?</a>
+                            </div>
+                            <a href="pendancy-dashboard.html" class="btn btn-primary form-submit-btn w-100">Login</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,7 +84,7 @@
     </script>
     <script>
         $(document).ready(function () {
-            $('#open-subgrid').click(function() {
+            $('#open-subgrid').click(function () {
                 $('.grid-sub-row').toggle();
                 $(this).parents('.grid-wrap').toggleClass('active');
             });
