@@ -1245,6 +1245,7 @@ tbody > tr > td {
 /* Login Screen */
 .login-right-column {
   background: #ffffff;
+  padding: 150px;
 }
 
 .login-heading {
@@ -1263,6 +1264,58 @@ tbody > tr > td {
   color: #ffffff;
 }
 
-.padding-20px{
-  padding: 20px;
+.padding-30px {
+  padding: 30px;
+}
+
+.form-heading {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.02em;
+  color: #2a2932;
+}
+
+.form-para {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #2a2932;
+}
+
+.login-form-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2a2932;
+  margin-bottom: 5px;
+}
+
+.forgot-password-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2a2932;
+}
+
+.form-input-field {
+  background: #ffffff;
+  border: 1px solid #dddde7;
+  border-radius: 2px;
+  padding: 10px 14px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #7d7c88;
+}
+
+.form-submit-btn {
+  background: #219d82;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
