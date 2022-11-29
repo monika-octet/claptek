@@ -131,39 +131,43 @@
                 <div>
                     <div class="d-flex">
                         <div class="dropdown me-2">
-                            <a class="btn btn-light btn-light-custom d-flex justify-content-between align-items-center" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-light btn-light-custom d-flex justify-content-between align-items-center"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Update<span class="ms-3"><img src="images/arrow-down.svg"></span>
                             </a>
 
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Response</a></li>
-                                <li><a class="dropdown-item dropdown-item-text" href="#">Questions (Assignments)</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Questions (Assignments)</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="dropdown me-2">
-                            <a class="btn btn-light btn-light-custom" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-light btn-light-custom" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Download<span class="ms-3"><img src="images/arrow-down.svg"></span>
                             </a>
 
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts List</a></li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Alert Assignment</a></li>
-                                <li><a class="dropdown-item dropdown-item-text" href="#">View Assignment Details</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">View Assignment Details</a>
+                                </li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Bulk Export</a></li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Dropped Export</a></li>
                             </ul>
                         </div>
                         <div class="dropdown">
-                            <a class="btn btn-light btn-light-custom" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn btn-light btn-light-custom" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Upload<span class="ms-3"><img src="images/arrow-down.svg"></span>
                             </a>
 
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts Reponse</a></li>
-                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alert Assignment</a></li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts Reponse</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alert Assignment</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -172,7 +176,7 @@
         </section>
         <section class="field-library-section h-100vh">
             <div class="all-donor-grid table-holder position-relative">
-                <table class="table table-bordered table-sticky mb-0">
+                <table class="table table-bordered table-sticky table-view-response mb-0">
                     <thead>
                         <tr class="table-row">
                             <th scope="col" class="sticky-column-left">
@@ -224,201 +228,979 @@
                             <th scope="col">RM CODE</th>
                             <th scope="col">EMPLOYEE CODE</th>
                             <th scope="col">GROUP STATUS</th>
-                            <th class="sticky-column sticky-column-three-icon bg-table-header py-1 d-flex justify-content-start align-items-center"
+                            <th class="sticky-column bg-table-header w-115px py-1 d-flex justify-content-start align-items-center"
                                 scope="col">ACTION</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white">
                         <tr>
                             <th scope="row" class="sticky-column-left"></th>
-                            <td>
+                            <td class="w-175px">
                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                     placeholder="" />
                             </td>
-                            <td>
+                            <td class="w-200px">
                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                     placeholder="" />
                             </td>
-                            <td>
+                            <td class="w-110px">
                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                     placeholder="" />
                             </td>
-                            <td>
+                            <td class="w-160px">
                                 <input class="form-control" list="datalistOptions" id="exampleDataList"
                                     placeholder="" />
                             </td>
-                            <th class="sticky-column sticky-column-three-icon py-1"></th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-24">113218</td>
-                            <td class="w-24">48</td>
-                            <td class="w-24">0</td>
-                            <td class="w-20">48</td>
-                            <th class="sticky-column py-1 z-index-2">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
-                                        class="width-fit">
-                                        <a href="view-response.html"
-                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
-                                            <img src="images/eye.svg" alt="" />
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </th>
+                            <td class="w-120px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-220px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-150px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-175px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-210px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-150px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-170px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-160px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-130px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-160px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-160px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-160px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-180px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-170px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-170px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-150px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-140px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-140px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-150px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-300px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-200px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-145px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-160px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-180px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-250px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-145px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-140px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-200px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-200px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-200px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-200px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-110px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-150px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-120px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-140px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-280px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-210px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-110px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-110px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-140px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-130px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <td class="w-130px">
+                                <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                    placeholder="" />
+                            </td>
+                            <th class="sticky-column py-1 w-115px"></th>
                         </tr>
                     </tbody>
                 </table>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed accordian-table w-7780px" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <img src="images/down.svg" alt="" class="me-2">Group_Id: 113218 (Open) (48/48)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0">
+                                <table class="table table-bordered table-sticky table-view-response mb-0">
+                                    <tbody class="bg-white">
+                                        <tr>
+                                            <th class="w-2 sticky-column-left" scope="row">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </th>
+                                            <td class="w-175px">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select
+                                                    </button>
+                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_name</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_no</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class=" dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_number</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                            </td>
+                                            <td class="w-200px">
+                                                <input class="form-control h-24px" data-tippy-content="Test comment for exception of DP less than balance"
+                                                data-tippy-placement="right" disabled readonly placeholder="Test Comment for excepti..." />
+                                            </td>
+                                            <td class="w-110px"></td>
+                                            <td class="w-160px">UATA1088
+                                            </td>
+                                            <td class="w-120px text-center"><span class="tag bg-purple">L1</span></td>
+                                            <td class="w-220px">113218</td>
+                                            <td class="w-150px">07 July 2003</td>
+                                            <td class="w-175px">00010380000296</td>
+                                            <td class="w-210px">07 July 2003</td>
+                                            <td class="w-150px">8</td>
+                                            <td class="w-170px">Royal Enterprise</td>
+                                            <td class="w-160px">TRU</td>
+                                            <td class="w-130px">Check</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-180px">1200567</td>
+                                            <td class="w-170px">Ajit H Khodbaya</td>
+                                            <td class="w-170px">F</td>
+                                            <td class="w-150px">ADFGTYSD78</td>
+                                            <td class="w-140px">74</td>
+                                            <td class="w-140px">31</td>
+                                            <td class="w-150px">1200566</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-145px">08 June 2020</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-180px">N12350</td>
+                                            <td class="w-250px">Alert Already Raised</td>
+                                            <td class="w-145px">[Super_POS_ID]</td>
+                                            <td class="w-140px">No</td>
+                                            <td class="w-140px">ABC1123</td>
+                                            <td class="w-200px">XYZ123</td>
+                                            <td class="w-200px">602-603 Nirmal Kendra</td>
+                                            <td class="w-200px">Off Dr. Edwin Moses Road</td>
+                                            <td class="w-110px">Mahalakshmi</td>
+                                            <td class="w-150px">Maharashtra</td>
+                                            <td class="w-120px">700</td>
+                                            <td class="w-120px">AADFR7768F</td>
+                                            <td class="w-280px">400011</td>
+                                            <td class="w-210px">232</td>
+                                            <td class="w-110px">Current A/c - HDFC Plus (Retail)</td>
+                                            <td class="w-110px">Current Account</td>
+                                            <td class="w-140px">29</td>
+                                            <td class="w-130px">UATA1175</td>
+                                            <td class="w-130px text-center"><span class="tag bg-green">OPEN</span></td>
+                                            <th class="sticky-column z-index-2 w-115px">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="edit-alert-details.html"
+                                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center" type="button">
+                                                        <img src="images/edit.svg" alt="" />
+                                                    </a>
+                                                    <button class="btn btn-sm btn-dot me-1" type="button">
+                                                        <img data-tippy-content="View Correlation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/correlation.svg" alt="" />
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                        <img data-tippy-content="View Allocation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/allocation.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="w-2 sticky-column-left" scope="row">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </th>
+                                            <td class="w-175px">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select
+                                                    </button>
+                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_name</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_no</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class=" dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_number</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                            </td>
+                                            <td class="w-200px">
+                                                <input class="form-control h-24px" data-tippy-content="Test comment for exception of DP less than balance"
+                                                data-tippy-placement="right" disabled readonly placeholder="Test Comment for excepti..." />
+                                            </td>
+                                            <td class="w-110px"></td>
+                                            <td class="w-160px">UATA1088
+                                            </td>
+                                            <td class="w-120px text-center"><span class="tag bg-purple">L1</span></td>
+                                            <td class="w-220px">113218</td>
+                                            <td class="w-150px">07 July 2003</td>
+                                            <td class="w-175px">00010380000296</td>
+                                            <td class="w-210px">07 July 2003</td>
+                                            <td class="w-150px">8</td>
+                                            <td class="w-170px">Royal Enterprise</td>
+                                            <td class="w-160px">TRU</td>
+                                            <td class="w-130px">Check</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-180px">1200567</td>
+                                            <td class="w-170px">Ajit H Khodbaya</td>
+                                            <td class="w-170px">F</td>
+                                            <td class="w-150px">ADFGTYSD78</td>
+                                            <td class="w-140px">74</td>
+                                            <td class="w-140px">31</td>
+                                            <td class="w-150px">1200566</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-145px">08 June 2020</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-180px">N12350</td>
+                                            <td class="w-250px">Alert Already Raised</td>
+                                            <td class="w-145px">[Super_POS_ID]</td>
+                                            <td class="w-140px">No</td>
+                                            <td class="w-140px">ABC1123</td>
+                                            <td class="w-200px">XYZ123</td>
+                                            <td class="w-200px">602-603 Nirmal Kendra</td>
+                                            <td class="w-200px">Off Dr. Edwin Moses Road</td>
+                                            <td class="w-110px">Mahalakshmi</td>
+                                            <td class="w-150px">Maharashtra</td>
+                                            <td class="w-120px">700</td>
+                                            <td class="w-120px">AADFR7768F</td>
+                                            <td class="w-280px">400011</td>
+                                            <td class="w-210px">232</td>
+                                            <td class="w-110px">Current A/c - HDFC Plus (Retail)</td>
+                                            <td class="w-110px">Current Account</td>
+                                            <td class="w-140px">29</td>
+                                            <td class="w-130px">UATA1175</td>
+                                            <td class="w-130px text-center"><span class="tag bg-green">OPEN</span></td>
+                                            <th class="sticky-column z-index-2 w-115px">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="edit-alert-details.html"
+                                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center" type="button">
+                                                        <img src="images/edit.svg" alt="" />
+                                                    </a>
+                                                    <button class="btn btn-sm btn-dot me-1" type="button">
+                                                        <img data-tippy-content="View Correlation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/correlation.svg" alt="" />
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                        <img data-tippy-content="View Allocation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/allocation.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="w-2 sticky-column-left" scope="row">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </th>
+                                            <td class="w-175px">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select
+                                                    </button>
+                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_name</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_no</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class=" dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_number</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                            </td>
+                                            <td class="w-200px">
+                                                <input class="form-control h-24px" data-tippy-content="Test comment for exception of DP less than balance"
+                                                data-tippy-placement="right" disabled readonly placeholder="Test Comment for excepti..." />
+                                            </td>
+                                            <td class="w-110px"></td>
+                                            <td class="w-160px">UATA1088
+                                            </td>
+                                            <td class="w-120px text-center"><span class="tag bg-purple">L1</span></td>
+                                            <td class="w-220px">113218</td>
+                                            <td class="w-150px">07 July 2003</td>
+                                            <td class="w-175px">00010380000296</td>
+                                            <td class="w-210px">07 July 2003</td>
+                                            <td class="w-150px">8</td>
+                                            <td class="w-170px">Royal Enterprise</td>
+                                            <td class="w-160px">TRU</td>
+                                            <td class="w-130px">Check</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-180px">1200567</td>
+                                            <td class="w-170px">Ajit H Khodbaya</td>
+                                            <td class="w-170px">F</td>
+                                            <td class="w-150px">ADFGTYSD78</td>
+                                            <td class="w-140px">74</td>
+                                            <td class="w-140px">31</td>
+                                            <td class="w-150px">1200566</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-145px">08 June 2020</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-180px">N12350</td>
+                                            <td class="w-250px">Alert Already Raised</td>
+                                            <td class="w-145px">[Super_POS_ID]</td>
+                                            <td class="w-140px">No</td>
+                                            <td class="w-140px">ABC1123</td>
+                                            <td class="w-200px">XYZ123</td>
+                                            <td class="w-200px">602-603 Nirmal Kendra</td>
+                                            <td class="w-200px">Off Dr. Edwin Moses Road</td>
+                                            <td class="w-110px">Mahalakshmi</td>
+                                            <td class="w-150px">Maharashtra</td>
+                                            <td class="w-120px">700</td>
+                                            <td class="w-120px">AADFR7768F</td>
+                                            <td class="w-280px">400011</td>
+                                            <td class="w-210px">232</td>
+                                            <td class="w-110px">Current A/c - HDFC Plus (Retail)</td>
+                                            <td class="w-110px">Current Account</td>
+                                            <td class="w-140px">29</td>
+                                            <td class="w-130px">UATA1175</td>
+                                            <td class="w-130px text-center"><span class="tag bg-green">OPEN</span></td>
+                                            <th class="sticky-column z-index-2 w-115px">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="edit-alert-details.html"
+                                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center" type="button">
+                                                        <img src="images/edit.svg" alt="" />
+                                                    </a>
+                                                    <button class="btn btn-sm btn-dot me-1" type="button">
+                                                        <img data-tippy-content="View Correlation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/correlation.svg" alt="" />
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                        <img data-tippy-content="View Allocation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/allocation.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOneTwo">
+                            <button class="accordion-button collapsed accordian-table w-7780px" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOneTwo" aria-expanded="false"
+                                aria-controls="flush-collapseOneTwo">
+                                <img src="images/down.svg" alt="" class="me-2">Group_Id: 113218 (Open) (48/48)
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOneTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample1">
+                            <div class="accordion-body p-0">
+                                <table class="table table-bordered table-sticky table-view-response mb-0">
+                                    <tbody class="bg-white">
+                                        <tr>
+                                            <th class="w-2 sticky-column-left" scope="row">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </th>
+                                            <td class="w-175px">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select
+                                                    </button>
+                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_name</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_no</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class=" dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_number</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                            </td>
+                                            <td class="w-200px">
+                                                <input class="form-control h-24px" data-tippy-content="Test comment for exception of DP less than balance"
+                                                data-tippy-placement="right" disabled readonly placeholder="Test Comment for excepti..." />
+                                            </td>
+                                            <td class="w-110px"></td>
+                                            <td class="w-160px">UATA1088
+                                            </td>
+                                            <td class="w-120px text-center"><span class="tag bg-purple">L1</span></td>
+                                            <td class="w-220px">113218</td>
+                                            <td class="w-150px">07 July 2003</td>
+                                            <td class="w-175px">00010380000296</td>
+                                            <td class="w-210px">07 July 2003</td>
+                                            <td class="w-150px">8</td>
+                                            <td class="w-170px">Royal Enterprise</td>
+                                            <td class="w-160px">TRU</td>
+                                            <td class="w-130px">Check</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-180px">1200567</td>
+                                            <td class="w-170px">Ajit H Khodbaya</td>
+                                            <td class="w-170px">F</td>
+                                            <td class="w-150px">ADFGTYSD78</td>
+                                            <td class="w-140px">74</td>
+                                            <td class="w-140px">31</td>
+                                            <td class="w-150px">1200566</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-145px">08 June 2020</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-180px">N12350</td>
+                                            <td class="w-250px">Alert Already Raised</td>
+                                            <td class="w-145px">[Super_POS_ID]</td>
+                                            <td class="w-140px">No</td>
+                                            <td class="w-140px">ABC1123</td>
+                                            <td class="w-200px">XYZ123</td>
+                                            <td class="w-200px">602-603 Nirmal Kendra</td>
+                                            <td class="w-200px">Off Dr. Edwin Moses Road</td>
+                                            <td class="w-110px">Mahalakshmi</td>
+                                            <td class="w-150px">Maharashtra</td>
+                                            <td class="w-120px">700</td>
+                                            <td class="w-120px">AADFR7768F</td>
+                                            <td class="w-280px">400011</td>
+                                            <td class="w-210px">232</td>
+                                            <td class="w-110px">Current A/c - HDFC Plus (Retail)</td>
+                                            <td class="w-110px">Current Account</td>
+                                            <td class="w-140px">29</td>
+                                            <td class="w-130px">UATA1175</td>
+                                            <td class="w-130px text-center"><span class="tag bg-green">OPEN</span></td>
+                                            <th class="sticky-column z-index-2 w-115px">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="edit-alert-details.html"
+                                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center" type="button">
+                                                        <img src="images/edit.svg" alt="" />
+                                                    </a>
+                                                    <button class="btn btn-sm btn-dot me-1" type="button">
+                                                        <img data-tippy-content="View Correlation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/correlation.svg" alt="" />
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                        <img data-tippy-content="View Allocation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/allocation.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="w-2 sticky-column-left" scope="row">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </th>
+                                            <td class="w-175px">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select
+                                                    </button>
+                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_name</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_no</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class=" dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_number</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                            </td>
+                                            <td class="w-200px">
+                                                <input class="form-control h-24px" data-tippy-content="Test comment for exception of DP less than balance"
+                                                data-tippy-placement="right" disabled readonly placeholder="Test Comment for excepti..." />
+                                            </td>
+                                            <td class="w-110px"></td>
+                                            <td class="w-160px">UATA1088
+                                            </td>
+                                            <td class="w-120px text-center"><span class="tag bg-purple">L1</span></td>
+                                            <td class="w-220px">113218</td>
+                                            <td class="w-150px">07 July 2003</td>
+                                            <td class="w-175px">00010380000296</td>
+                                            <td class="w-210px">07 July 2003</td>
+                                            <td class="w-150px">8</td>
+                                            <td class="w-170px">Royal Enterprise</td>
+                                            <td class="w-160px">TRU</td>
+                                            <td class="w-130px">Check</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-180px">1200567</td>
+                                            <td class="w-170px">Ajit H Khodbaya</td>
+                                            <td class="w-170px">F</td>
+                                            <td class="w-150px">ADFGTYSD78</td>
+                                            <td class="w-140px">74</td>
+                                            <td class="w-140px">31</td>
+                                            <td class="w-150px">1200566</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-145px">08 June 2020</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-180px">N12350</td>
+                                            <td class="w-250px">Alert Already Raised</td>
+                                            <td class="w-145px">[Super_POS_ID]</td>
+                                            <td class="w-140px">No</td>
+                                            <td class="w-140px">ABC1123</td>
+                                            <td class="w-200px">XYZ123</td>
+                                            <td class="w-200px">602-603 Nirmal Kendra</td>
+                                            <td class="w-200px">Off Dr. Edwin Moses Road</td>
+                                            <td class="w-110px">Mahalakshmi</td>
+                                            <td class="w-150px">Maharashtra</td>
+                                            <td class="w-120px">700</td>
+                                            <td class="w-120px">AADFR7768F</td>
+                                            <td class="w-280px">400011</td>
+                                            <td class="w-210px">232</td>
+                                            <td class="w-110px">Current A/c - HDFC Plus (Retail)</td>
+                                            <td class="w-110px">Current Account</td>
+                                            <td class="w-140px">29</td>
+                                            <td class="w-130px">UATA1175</td>
+                                            <td class="w-130px text-center"><span class="tag bg-green">OPEN</span></td>
+                                            <th class="sticky-column z-index-2 w-115px">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="edit-alert-details.html"
+                                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center" type="button">
+                                                        <img src="images/edit.svg" alt="" />
+                                                    </a>
+                                                    <button class="btn btn-sm btn-dot me-1" type="button">
+                                                        <img data-tippy-content="View Correlation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/correlation.svg" alt="" />
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                        <img data-tippy-content="View Allocation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/allocation.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="w-2 sticky-column-left" scope="row">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </th>
+                                            <td class="w-175px">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Select
+                                                    </button>
+                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_name</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_no</label>
+                                                            </div>
+                                                        </li>
+                                                        <li class=" dropdown-item-select">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input me-2" type="checkbox"
+                                                                    id="inlineCheckbox1" value="option1" />
+                                                                <label class="form-check-label select-dropdown-label"
+                                                                    for="inlineCheckbox1">Account_number</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul> -->
+                                                </div>
+                                            </td>
+                                            <td class="w-200px">
+                                                <input class="form-control h-24px" data-tippy-content="Test comment for exception of DP less than balance"
+                                                data-tippy-placement="right" disabled readonly placeholder="Test Comment for excepti..." />
+                                            </td>
+                                            <td class="w-110px"></td>
+                                            <td class="w-160px">UATA1088
+                                            </td>
+                                            <td class="w-120px text-center"><span class="tag bg-purple">L1</span></td>
+                                            <td class="w-220px">113218</td>
+                                            <td class="w-150px">07 July 2003</td>
+                                            <td class="w-175px">00010380000296</td>
+                                            <td class="w-210px">07 July 2003</td>
+                                            <td class="w-150px">8</td>
+                                            <td class="w-170px">Royal Enterprise</td>
+                                            <td class="w-160px">TRU</td>
+                                            <td class="w-130px">Check</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-160px">09 April 2021</td>
+                                            <td class="w-180px">1200567</td>
+                                            <td class="w-170px">Ajit H Khodbaya</td>
+                                            <td class="w-170px">F</td>
+                                            <td class="w-150px">ADFGTYSD78</td>
+                                            <td class="w-140px">74</td>
+                                            <td class="w-140px">31</td>
+                                            <td class="w-150px">1200566</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-300px">p</td>
+                                            <td class="w-145px">08 June 2020</td>
+                                            <td class="w-160px"></td>
+                                            <td class="w-180px">N12350</td>
+                                            <td class="w-250px">Alert Already Raised</td>
+                                            <td class="w-145px">[Super_POS_ID]</td>
+                                            <td class="w-140px">No</td>
+                                            <td class="w-140px">ABC1123</td>
+                                            <td class="w-200px">XYZ123</td>
+                                            <td class="w-200px">602-603 Nirmal Kendra</td>
+                                            <td class="w-200px">Off Dr. Edwin Moses Road</td>
+                                            <td class="w-110px">Mahalakshmi</td>
+                                            <td class="w-150px">Maharashtra</td>
+                                            <td class="w-120px">700</td>
+                                            <td class="w-120px">AADFR7768F</td>
+                                            <td class="w-280px">400011</td>
+                                            <td class="w-210px">232</td>
+                                            <td class="w-110px">Current A/c - HDFC Plus (Retail)</td>
+                                            <td class="w-110px">Current Account</td>
+                                            <td class="w-140px">29</td>
+                                            <td class="w-130px">UATA1175</td>
+                                            <td class="w-130px text-center"><span class="tag bg-green">OPEN</span></td>
+                                            <th class="sticky-column z-index-2 w-115px">
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="edit-alert-details.html"
+                                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center" type="button">
+                                                        <img src="images/edit.svg" alt="" />
+                                                    </a>
+                                                    <button class="btn btn-sm btn-dot me-1" type="button">
+                                                        <img data-tippy-content="View Correlation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/correlation.svg" alt="" />
+                                                    </button>
+                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                        <img data-tippy-content="View Allocation"
+                                                            data-tippy-placement="bottom" class="width-fit"
+                                                            src="images/allocation.svg" alt="" />
+                                                    </button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="all-donor-grid">
                 <div class="pagination-wrap mt-3">
