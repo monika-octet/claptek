@@ -63,9 +63,6 @@
                             <li><a class="dropdown-item" href="questions.html">Questions</a></li>
                             <li><a class="dropdown-item" href="answer-template.html">Answer Template</a></li>
                             <li>
-                                <a class="dropdown-item" href="#">Answer Template Master</a>
-                            </li>
-                            <li>
                                 <a class="dropdown-item" href="#">Data Integration Staging Report</a>
                             </li>
                         </ul>
@@ -110,12 +107,12 @@
         </nav>
     </header>
     <main>
-        <section class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center my-20">
+        <section class="container-fluid no-height">
+            <div class="d-flex justify-content-between align-items-center py-3">
                 <h1 class="mb-0">Fields Library</h1>
             </div>
         </section>
-        <section class="field-library-section h-100vh">
+        <section class="field-library-section flex-fill">
             <div class="card fields-library-card">
                 <div class="mb-3 d-flex justify-content-between align-items-center">
                     <div class="col">
@@ -136,12 +133,53 @@
                     </div>
                     <div class="col-6 mb-4">
                         <label for="inputText4" class="form-label">Data Type</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Select User</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
+                        <div class="dropdown">
+                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Select User
+                            </button>
+                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
                     </div>
                     <div class="col-12 mb-4">
                         <label for="inputText4" class="form-label">Description</label>
