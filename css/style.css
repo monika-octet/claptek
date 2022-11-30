@@ -1034,6 +1034,10 @@ tbody > tr > td {
   width: 73px!important;
 }
 
+.height-100vh{
+  height: 100vh!important;
+}
+
 .table-td-link {
   font-weight: 400;
   font-size: 13px;
