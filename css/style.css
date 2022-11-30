@@ -1243,9 +1243,18 @@ tbody > tr > td {
 }
 
 /* Login Screen */
+.login-left-column {
+  background: #131d40;
+}
+
 .login-right-column {
   background: #ffffff;
   padding: 150px;
+}
+
+.login-form {
+  width: 450px;
+  height: 356px;
 }
 
 .login-heading {
