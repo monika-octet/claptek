@@ -107,15 +107,15 @@
         </nav>
     </header>
     <main>
-        <section class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center my-20">
+        <section class="container-fluid no-height">
+            <div class="d-flex justify-content-between align-items-center py-3">
                 <h1 class="mb-0">Manage Scenarios</h1>
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-scenario">
                     Create New
                 </button>
             </div>
         </section>
-        <section>
+        <section class="flex-fill d-flex flex-column">
             <ul class="nav nav-pills mb-3 main-tab" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
@@ -138,15 +138,15 @@
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                    <button class="nav-link" id="pills-draft-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-draft" type="button" role="tab" aria-controls="pills-draft"
                         aria-selected="false">
                         Draft (5)
                     </button>
                 </li>
             </ul>
-            <div class="tab-content main-tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="tab-content main-tab-content flex-fill" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
                     <div class="all-donor-grid table-holder position-relative">
                         <table class="table table-bordered table-sticky table-manage-scenario mb-0">
                             <thead>
@@ -179,63 +179,63 @@
                                     <th scope="row" class="sticky-column-left"></th>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <td>
                                         <input class="form-control" list="datalistOptions" id="exampleDataList"
-                                            placeholder="" />
+                                            placeholder="Search here..." />
                                     </td>
                                     <th class="sticky-column py-1"></th>
                                 </tr>
@@ -636,14 +636,1475 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    ...
+                <div class="tab-pane fade" id="pills-enabled" role="tabpanel" aria-labelledby="pills-enabled-tab">
+                    <div class="all-donor-grid table-holder position-relative">
+                        <table class="table table-bordered table-sticky table-manage-scenario mb-0">
+                            <thead>
+                                <tr class="table-row">
+                                    <th scope="col" class="sticky-column-left">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <th scope="col">SCENARIO NUMBER</th>
+                                    <th scope="col">SCENARIO NAME</th>
+                                    <th scope="col">PRIMARY OWNER</th>
+                                    <th scope="col">IA UNIT</th>
+                                    <th scope="col">IA SUB UNIT</th>
+                                    <th scope="col">FREQUENCY</th>
+                                    <th scope="col">CATEGORY</th>
+                                    <th scope="col">SUB CATEGORY 1</th>
+                                    <th scope="col">DATE OF CREATION</th>
+                                    <th scope="col">CREATED BY</th>
+                                    <th scope="col">MODIFIED BY</th>
+                                    <th scope="col">MODIFIED DATE</th>
+                                    <th scope="col">RESPONSE TYPE</th>
+                                    <th scope="col">SCENARIO STATUS</th>
+                                    <th scope="col">REPORT ID</th>
+                                    <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
+                                        scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <th scope="row" class="sticky-column-left"></th>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <th class="sticky-column py-1"></th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="all-donor-grid">
+                        <div class="pagination-wrap mt-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <span>Show</span>
+                                        <select class="form-select picker-select" name="code" style="display: none">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <div class="picker">
+                                            <span class="pc-select"><span class="pc-element pc-trigger">1</span><span
+                                                    class="pc-list" style="display: none">
+                                                    <ul>
+                                                        <li data-id="1" data-order="0">1</li>
+                                                        <li data-id="2" data-order="1">2</li>
+                                                        <li data-id="3" data-order="2">3</li>
+                                                        <li data-id="4" data-order="3">4</li>
+                                                    </ul>
+                                                </span></span>
+                                        </div>
+                                        <span>Entries</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <span>Total Pages 04:</span>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                        <img src="images/prev.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">
+                                                        <img src="images/next.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                    ...
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab">
+                    <div class="all-donor-grid table-holder position-relative">
+                        <table class="table table-bordered table-sticky table-manage-scenario mb-0">
+                            <thead>
+                                <tr class="table-row">
+                                    <th scope="col" class="sticky-column-left">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <th scope="col">SCENARIO NUMBER</th>
+                                    <th scope="col">SCENARIO NAME</th>
+                                    <th scope="col">PRIMARY OWNER</th>
+                                    <th scope="col">IA UNIT</th>
+                                    <th scope="col">IA SUB UNIT</th>
+                                    <th scope="col">FREQUENCY</th>
+                                    <th scope="col">CATEGORY</th>
+                                    <th scope="col">SUB CATEGORY 1</th>
+                                    <th scope="col">DATE OF CREATION</th>
+                                    <th scope="col">CREATED BY</th>
+                                    <th scope="col">MODIFIED BY</th>
+                                    <th scope="col">MODIFIED DATE</th>
+                                    <th scope="col">RESPONSE TYPE</th>
+                                    <th scope="col">SCENARIO STATUS</th>
+                                    <th scope="col">REPORT ID</th>
+                                    <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
+                                        scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <th scope="row" class="sticky-column-left"></th>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <th class="sticky-column py-1"></th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="all-donor-grid">
+                        <div class="pagination-wrap mt-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <span>Show</span>
+                                        <select class="form-select picker-select" name="code" style="display: none">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <div class="picker">
+                                            <span class="pc-select"><span class="pc-element pc-trigger">1</span><span
+                                                    class="pc-list" style="display: none">
+                                                    <ul>
+                                                        <li data-id="1" data-order="0">1</li>
+                                                        <li data-id="2" data-order="1">2</li>
+                                                        <li data-id="3" data-order="2">3</li>
+                                                        <li data-id="4" data-order="3">4</li>
+                                                    </ul>
+                                                </span></span>
+                                        </div>
+                                        <span>Entries</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <span>Total Pages 04:</span>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                        <img src="images/prev.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">
+                                                        <img src="images/next.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab">
-                    ...
+                    <div class="all-donor-grid table-holder position-relative">
+                        <table class="table table-bordered table-sticky table-manage-scenario mb-0">
+                            <thead>
+                                <tr class="table-row">
+                                    <th scope="col" class="sticky-column-left">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <th scope="col">SCENARIO NUMBER</th>
+                                    <th scope="col">SCENARIO NAME</th>
+                                    <th scope="col">PRIMARY OWNER</th>
+                                    <th scope="col">IA UNIT</th>
+                                    <th scope="col">IA SUB UNIT</th>
+                                    <th scope="col">FREQUENCY</th>
+                                    <th scope="col">CATEGORY</th>
+                                    <th scope="col">SUB CATEGORY 1</th>
+                                    <th scope="col">DATE OF CREATION</th>
+                                    <th scope="col">CREATED BY</th>
+                                    <th scope="col">MODIFIED BY</th>
+                                    <th scope="col">MODIFIED DATE</th>
+                                    <th scope="col">RESPONSE TYPE</th>
+                                    <th scope="col">SCENARIO STATUS</th>
+                                    <th scope="col">REPORT ID</th>
+                                    <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
+                                        scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                                <tr>
+                                    <th scope="row" class="sticky-column-left"></th>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                            placeholder="Search here..." />
+                                    </td>
+                                    <th class="sticky-column py-1"></th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="w-2 sticky-column-left" scope="row">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault" />
+                                    </th>
+                                    <td class="w-8">9999/Informative</td>
+                                    <td class="w-8">New Testing Sub Unit</td>
+                                    <td class="w-5">-</td>
+                                    <td class="w-8">Offsite Monitoring Unit</td>
+                                    <td class="w-8">AF/OE</td>
+                                    <td class="w-5">Daily</td>
+                                    <td class="w-8">Abnormal Spurt</td>
+                                    <td class="w-5">ATM 1</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-5">653731</td>
+                                    <td class="w-5">Checker</td>
+                                    <td class="w-8">20 Feb 2021 at 20:35</td>
+                                    <td class="w-8">Response Required Level 2</td>
+                                    <td class="w-5 text-center"><span class="tag bg-green">Live</span></td>
+                                    <td class="w-5">STGRPT0063</td>
+                                    <th class="sticky-column py-1 z-index-2">
+                                        <div class="d-flex justify-content-center">
+                                            <button data-bs-toggle="modal" data-bs-target="#edit-ageing"
+                                                class="btn btn-sm btn-dot me-2" type="button">
+                                                <img src="images/edit.svg" alt="" />
+                                            </button>
+                                            <div class="nav-item dropdown table-action-dropdown">
+                                                <a class="btn btn-sm btn-dot d-flex justify-content-center align-items-center"
+                                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img src="images/more-icon.svg" alt="" />
+                                                </a>
+                                                <ul class="dropdown-menu z-index-3" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Download</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report Format</a></li>
+                                                    <li><a class="dropdown-item" href="#">Export</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="all-donor-grid">
+                        <div class="pagination-wrap mt-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-start align-items-center">
+                                        <span>Show</span>
+                                        <select class="form-select picker-select" name="code" style="display: none">
+                                            <option value="1" selected="selected">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                        <div class="picker">
+                                            <span class="pc-select"><span class="pc-element pc-trigger">1</span><span
+                                                    class="pc-list" style="display: none">
+                                                    <ul>
+                                                        <li data-id="1" data-order="0">1</li>
+                                                        <li data-id="2" data-order="1">2</li>
+                                                        <li data-id="3" data-order="2">3</li>
+                                                        <li data-id="4" data-order="3">4</li>
+                                                    </ul>
+                                                </span></span>
+                                        </div>
+                                        <span>Entries</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <span>Total Pages 04:</span>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                        <img src="images/prev.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">
+                                                        <img src="images/next.svg" alt="" />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
