@@ -1030,12 +1030,12 @@ tbody > tr > td {
   width: 20%;
 }
 
-.w-73px{
-  width: 73px!important;
+.w-73px {
+  width: 73px !important;
 }
 
-.height-100vh{
-  height: 100vh!important;
+.height-100vh {
+  height: 100vh !important;
 }
 
 .table-td-link {
@@ -1199,7 +1199,7 @@ tbody > tr > td {
 }
 
 .w-70px {
-  width: 70px!important;
+  width: 70px !important;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -1388,6 +1388,11 @@ tbody > tr > td {
   color: #7d7c88;
 }
 
+.form-input-field:hover {
+  background: #f5f5fb;
+  cursor: pointer;
+}
+
 .form-submit-btn {
   background: #219d82;
   border-radius: 5px;
@@ -1397,6 +1402,10 @@ tbody > tr > td {
   line-height: 17px;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+
+.form-submit-btn:hover {
+  background: #1b856e;
 }
 
 .ul-text {
@@ -1414,14 +1423,30 @@ table tr {
   height: 40px !important;
 }
 
-.no-height{
-  height: auto!important;
+.no-height {
+  height: auto !important;
 }
 
-.no-height-tab-content{
+.no-height-tab-content {
   height: calc(100% - 40px);
 }
 
-.overflow-y-hidden{
+.overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.text-content-login-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 15px;
+}
+
+.form-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
 }
