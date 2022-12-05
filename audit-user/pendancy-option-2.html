@@ -5,26 +5,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Questions Select</title>
+    <title>Pendancy Option 2</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../plugin/bootstrap/bootstrap.min.css" />
     <!-- picker -->
-    <link rel="stylesheet" href="plugin/picker/picker.min.css" type="text/css" />
-    <link rel="stylesheet" href="plugin/datepicker/datepicker.css" type="text/css" />
+    <link rel="stylesheet" href="../plugin/picker/picker.min.css" type="text/css" />
+    <link rel="stylesheet" href="../plugin/datepicker/datepicker.css" type="text/css" />
     <!-- style -->
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.svg" alt="" />
+                <img src="../images/logo.svg" alt="" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Dashboard
@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="pendancy-dashboard.html">Pendancy Dashboard</a></li>
                         </ul>
-                    </li> -->
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,7 +100,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <img src="images/powerby.svg" alt="" />
+                    <img src="../images/powerby.svg" alt="" />
                     <div class="profile-name">JD</div>
                 </div>
             </div>
@@ -110,46 +110,18 @@
         <section class="container-fluid">
             <div class="d-flex justify-content-between align-items-center py-3">
                 <div>
-                    <h1 class="mb-3">Questions</h1>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="selected-user align-items-center me-2">
-                            <span class="badge-tag-text">QS-044/ALT</span>
-                            <img src="images/close-cross.svg" alt="" class="pointer">
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a class="nav-link link-text-black dropdown-toggle d-flex align-items-center" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                                aria-expanded="false">
-                                <img src="images/plus-fill.svg" alt="" class="me-1">Custom
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <div class="btn-group dropend w-100">
-                                        <a class="dropdown-item d-flex justify-content-between align-items-center"
-                                            href="#" id="subNavbarDropdown" role="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">Question Set<img src="images/right-arrow-dropdown.svg"
-                                                alt="" class="ms-auto"></a>
-                                        <ul class="dropdown-menu" aria-labelledby="subNavbarDropdown">
-                                            <li><a class="dropdown-item" href="#">QS-044/ALT</a></li>
-                                            <li><a class="dropdown-item" href="#">Question Set One</a></li>
-                                            <li><a class="dropdown-item" href="#">ATMQ Set 1</a></li>
-                                            <li><a class="dropdown-item" href="#">AML_Rented</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Title</a></li>
-                                <li><a class="dropdown-item" href="#">SR NO</a></li>
-                                <li><a class="dropdown-item" href="#">Status</a></li>
-                                <li><a class="dropdown-item" href="#">Maker ID</a></li>
-                                <li><a class="dropdown-item" href="#">Modified By ID</a></li>
-                                <li><a class="dropdown-item" href="#">Modified Date</a></li>
-                            </ul>
-                        </div>
+                    <h1 class="mb-3 page-title"><a class="pendancy-home-link" href="pendancy-dashboard.html">Pendancy
+                            Dasboard</a><span class="mx-2"><img src="../images/breadcrumb-right.svg" alt=""></span><span
+                            class="breadcrumb-active">Exception of Dp Less Than Balance</span></h1>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-light me-2 btn-light-custom">
+                            Upload Response
+                        </button>
+                        <button type="button" class="btn btn-light btn-light-custom">
+                            Upload Assignment
+                        </button>
                     </div>
                 </div>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-question">
-                    Create New
-                </button>
             </div>
         </section>
         <section class="field-library-section flex-fill">
@@ -160,321 +132,201 @@
                             <th scope="col" class="sticky-column-left">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
-                            <th scope="col" class="filter-th">QUESTION SET</th>
-                            <th scope="col" class="filter-th">TITLE</th>
-                            <th scope="col" class="filter-th">SR NO</th>
-                            <th scope="col" class="filter-th">STATUS</th>
-                            <th scope="col" class="filter-th">MAKER ID</th>
-                            <th scope="col" class="filter-th">MODIFIED BY ID</th>
-                            <th scope="col" class="filter-th">MODIFIED DATE</th>
-                            <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
+                            <th scope="col" class="filter-th">GROUP ID</th>
+                            <th scope="col" class="filter-th">ASSIGN COUNT</th>
+                            <th scope="col" class="filter-th">DROPPED COUNT</th>
+                            <th scope="col" class="filter-th">TOTAL COUNT</th>
+                            <th class="sticky-column sticky-column-three-icon bg-table-header py-1 d-flex justify-content-start align-items-center"
                                 scope="col">ACTION</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white">
                         <tr>
                             <th scope="row" class="sticky-column-left"></th>
-                            <td class="w-280px">
+                            <td>
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-220px">
+                            <td>
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-100px">
+                            <td>
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-125px">
+                            <td>
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-110px">
-                                <input class="form-control h-24px" type="text" placeholder="search here..." />
-                            </td>
-                            <td class="w-160px">
-                                <input class="form-control h-24px" type="text" placeholder="search here..." />
-                            </td>
-                            <td class="w-170px">
-                                <input class="form-control h-24px" type="text" placeholder="search here..." />
-                            </td>
-                            <th class="sticky-column py-1"></th>
+                            <th class="sticky-column sticky-column-three-icon py-1"></th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-24">113218</td>
+                            <td class="w-24">48</td>
+                            <td class="w-24">0</td>
+                            <td class="w-20">48</td>
+                            <th class="sticky-column py-1 z-index-2">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div data-tippy-content="View Response" data-tippy-placement="bottom"
+                                        class="width-fit">
+                                        <a href="view-response.html"
+                                            class="btn btn-sm btn-dot d-flex justify-content-center align-items-center">
+                                            <img src="../images/eye.svg" alt="" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </th>
                         </tr>
                     </tbody>
                 </table>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed accordian-table w-1500px" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                <img src="images/down.svg" alt="" class="me-2">QS-044/ALT
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body p-0">
-                                <table class="table table-bordered table-sticky mb-0">
-                                    <tbody class="bg-white">
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample2">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed accordian-table w-1500px" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOneTwo" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                <img src="images/down.svg" alt="" class="me-2">Question Set 1
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOneTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body p-0">
-                                <table class="table table-bordered table-sticky mb-0">
-                                    <tbody class="bg-white">
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample1">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOneThree">
-                            <button class="accordion-button collapsed accordian-table w-1500px" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOneThree" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                <img src="images/down.svg" alt="" class="me-2">ATMQ Set 1
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOneThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOneThree" data-bs-parent="#accordionFlushExample1">
-                            <div class="accordion-body p-0">
-                                <table class="table table-bordered table-sticky mb-0">
-                                    <tbody class="bg-white">
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="w-2 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault" />
-                                            </th>
-                                            <td class="w-280px">QS-044/ALT</td>
-                                            <td class="w-220px">Define role of AUS</td>
-                                            <td class="w-100px">1</td>
-                                            <td class="w-125px text-center"><span class="tag bg-green">Enabled</span></td>
-                                            <td class="w-110px">-</td>
-                                            <td class="w-160px">-</td>
-                                            <td class="w-170px">20 Feb 2021 at 20:35</td>
-                                            <th class="sticky-column py-1 z-index-2">
-                                                <div class="d-flex justify-content-center">
-                                                    <button data-bs-toggle="modal" data-bs-target="#edit-question"
-                                                        class="btn btn-sm btn-dot me-2" type="button">
-                                                        <img src="images/edit.svg" alt="" />
-                                                    </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
-                                                        <img src="images/delete.svg" alt="" />
-                                                    </button>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="all-donor-grid">
                 <div class="pagination-wrap mt-3">
@@ -509,7 +361,7 @@
                                     <ul class="pagination justify-content-center">
                                         <li class="page-item disabled">
                                             <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                                <img src="images/prev.svg" alt="" />
+                                                <img src="../images/prev.svg" alt="" />
                                             </a>
                                         </li>
                                         <li class="page-item active">
@@ -523,7 +375,7 @@
                                         </li>
                                         <li class="page-item">
                                             <a class="page-link" href="#">
-                                                <img src="images/next.svg" alt="" />
+                                                <img src="../images/next.svg" alt="" />
                                             </a>
                                         </li>
                                     </ul>
@@ -623,7 +475,7 @@
                                     <div class="col-md-7 mt-3">
                                         <a class="link-text-success d-flex align-items-center" role="button"
                                             data-bs-toggle="modal" data-bs-target="#add-question"><img
-                                                src="images/plus.svg" alt="" class="me-2">New Question Set</a>
+                                                src="../images/plus.svg" alt="" class="me-2">New Question Set</a>
                                     </div>
                                     <div class="col-md-7 mt-3">
                                         <label for="inputText4" class="form-label">Question Number <sup>*</sup></label>
@@ -690,7 +542,7 @@
                                     <div class="col-md-7 mt-3">
                                         <a class="link-text-success d-flex align-items-center" role="button"
                                             data-bs-toggle="modal" data-bs-target="#answer-type"><img
-                                                src="images/plus.svg" alt="" class="me-2">New Answer Type</a>
+                                                src="../images/plus.svg" alt="" class="me-2">New Answer Type</a>
                                     </div>
                                 </div>
 
@@ -1114,9 +966,9 @@
     </div>
 
     <!-- script -->
-    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
-    <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
-    <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="../plugin/bootstrap/popper.min.js" type="text/javascript"></script>
+    <script src="../plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
         const template = document.getElementById("template");

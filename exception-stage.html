@@ -33,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Dashboard
@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="pendancy-dashboard.html">Pendancy Dashboard</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -147,22 +147,22 @@
             <div class="tab-content main-tab-content flex-fill" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                     <div class="all-donor-grid table-holder">
-                        <table class="table table-bordered table-responsive table-sticky mb-0 position-relative">
+                        <table class="table table-bordered table-sticky table-exception-stage mb-0 position-relative">
                             <thead>
                                 <tr class="table-row">
                                     <th class="sticky-column-left" scope="col">
                                         <input class="form-check-input" type="checkbox" value=""
                                             id="flexCheckDefault" />
                                     </th>
-                                    <th scope="col">STAGE NAME</th>
-                                    <th scope="col">STATUS</th>
-                                    <th scope="col">IS PART OF ALLOCATION</th>
-                                    <th scope="col">IS START STAGE</th>
-                                    <th scope="col">IS END STAGE</th>
-                                    <th scope="col">SHOW ALL REPORT FIELDS</th>
-                                    <th scope="col">MAKER ID</th>
-                                    <th scope="col">CREATED ON</th>
-                                    <th scope="col">MODIFIED ON</th>
+                                    <th scope="col" class="filter-th">STAGE NAME</th>
+                                    <th scope="col" class="filter-th">STATUS</th>
+                                    <th scope="col" class="filter-th">IS PART OF ALLOCATION</th>
+                                    <th scope="col" class="filter-th">IS START STAGE</th>
+                                    <th scope="col" class="filter-th">IS END STAGE</th>
+                                    <th scope="col" class="filter-th">SHOW ALL REPORT FIELDS</th>
+                                    <th scope="col" class="filter-th">MAKER ID</th>
+                                    <th scope="col" class="filter-th">CREATED ON</th>
+                                    <th scope="col" class="filter-th">MODIFIED ON</th>
                                     <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
                                         scope="col">ACTION</th>
                                 </tr>
@@ -171,39 +171,39 @@
                                 <tr>
                                     <th class="sticky-column-left" scope="row"></th>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <td>
-                                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                             placeholder="Search here..." />
                                     </td>
                                     <th class="sticky-column py-1"></th>
@@ -219,7 +219,7 @@
                                     <td class="w-8">True</td>
                                     <td class="w-8">False</td>
                                     <td class="w-15">False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -246,7 +246,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -273,7 +273,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -300,7 +300,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -327,7 +327,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -354,7 +354,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -381,7 +381,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
@@ -408,7 +408,7 @@
                                     <td>True</td>
                                     <td>False</td>
                                     <td>False</td>
-                                    <td>SMAL512</td>
+                                    <td class="w-7">SMAL512</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <td class="w-15">20 Feb 2021 at 20:35</td>
                                     <th class="sticky-column py-1">
