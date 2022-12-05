@@ -121,10 +121,16 @@ section.flex-fill {
   background: #d4d4e2;
 }
 
+.table{
+  height: 418px;
+    overflow-y: scroll;
+}
+
 .all-donor-grid {
   width: calc(100% - 40px);
   margin: 0px auto;
 }
+
 .all-donor-grid .grid-row {
   display: grid;
   grid-template-columns: 3fr 1.5fr 2fr 2fr 1fr 1fr 1fr;
@@ -535,7 +541,13 @@ tbody > tr > td {
 }
 
 .table-holder {
-  overflow: scroll;
+  height: 418px;
+  overflow-y: scroll;
+}
+
+.table-holder.less-content {
+  height: 490px;
+  overflow-y: scroll;
 }
 
 /* pagination */
