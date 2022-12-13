@@ -67,7 +67,7 @@
                                 Update<span class="ms-3"><img src="../images/arrow-down.svg"></span>
                             </a>
 
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Response</a></li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Questions (Assignments)</a>
                                 </li>
@@ -79,7 +79,7 @@
                                 Download<span class="ms-3"><img src="../images/arrow-down.svg"></span>
                             </a>
 
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts List</a></li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Alert Assignment</a></li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">View Assignment Details</a>
@@ -94,7 +94,7 @@
                                 Upload<span class="ms-3"><img src="../images/arrow-down.svg"></span>
                             </a>
 
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alerts Reponse</a>
                                 </li>
                                 <li><a class="dropdown-item dropdown-item-text" href="#">Multiple Alert Assignment</a>
@@ -110,7 +110,7 @@
                 <table class="table table-bordered table-sticky table-edit-alert mb-0">
                     <thead>
                         <tr class="table-row">
-                            <th scope="col" class="sticky-column-left bg-table-header">
+                            <th scope="col" class="sticky-column-left bg-table-header text-center">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <th scope="col" class="sticky-column-left-2 bg-table-header">RESPONSE</th>
@@ -132,7 +132,7 @@
                     </thead>
                     <tbody class="bg-white">
                         <tr>
-                            <th scope="row" class="sticky-column-left"></th>
+                            <th scope="row" class="sticky-column-left text-center"></th>
                             <td class="w-175px sticky-column-left-2">
                                 <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                     placeholder="Search here..." />
@@ -192,7 +192,7 @@
                             <th class="sticky-column py-1 w-115px"></th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -289,7 +289,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -386,7 +386,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -483,7 +483,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -580,7 +580,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -677,7 +677,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -774,7 +774,7 @@
                             </th>
                         </tr>
                         <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
+                            <th class="w-2 sticky-column-left text-center" scope="row">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
@@ -1209,24 +1209,41 @@
     <div class="modal fade" id="correlation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered justify-content-center">
             <div class="modal-content correlation-modal">
-                <div class="modal-body p-4">
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h3 class="mb-0 delete-modal-heading">
-                            Co-Relation Details
-                        </h3>
-                        <a data-bs-dismiss="modal" class="cursor-pointer"><img src="../images/close-cross.svg"
-                                alt=""></a>
-                    </div>
+                <div class="modal-header justify-content-between align-items-center p-4 border-0">
+                    <h3 class="mb-0 delete-modal-heading">
+                        Co-Relation Details
+                    </h3>
+                    <a data-bs-dismiss="modal" class="cursor-pointer"><img src="../images/close-cross.svg" alt=""></a>
+                </div>
+                <div class="modal-body p-0">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <button class="nav-link active" id="nav-within-tab" data-bs-toggle="tab" data-bs-target="#nav-within" type="button" role="tab" aria-controls="nav-within" aria-selected="true">Within Scenario</button>
-                          <button class="nav-link" id="nav-other-tab" data-bs-toggle="tab" data-bs-target="#nav-other" type="button" role="tab" aria-controls="nav-other" aria-selected="false">Other Scenarios</button>
+                            <button class="nav-link w-50 active" id="nav-within-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-within" type="button" role="tab" aria-controls="nav-within"
+                                aria-selected="true">Within Scenario</button>
+                            <button class="nav-link w-50" id="nav-other-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-other" type="button" role="tab" aria-controls="nav-other"
+                                aria-selected="false">Other
+                                Scenarios</button>
                         </div>
-                      </nav>
-                      <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-within" role="tabpanel" aria-labelledby="nav-within-tab" tabindex="0">...</div>
-                        <div class="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab" tabindex="0">...</div>
-                      </div>
+                    </nav>
+                    <div class="tab-content d-flex justify-content-center align-items-center h-100 p-4"
+                        id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-within" role="tabpanel"
+                            aria-labelledby="nav-within-tab" tabindex="0">
+                            <div class="text-center flex-fill">
+                                <img src="../images/no-data.svg" alt="" class="mb-2 no-data-img">
+                                <p class="no-data-text">No data to display.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-other"
+                            role="tabpanel" aria-labelledby="nav-other-tab" tabindex="0">
+                            <div class="text-center flex-fill">
+                                <img src="../images/no-data.svg" alt="" class="mb-2 no-data-img">
+                                <p class="no-data-text">No data to display.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
