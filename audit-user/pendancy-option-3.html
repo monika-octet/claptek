@@ -55,8 +55,8 @@
             <div class="d-flex justify-content-between align-items-center py-3">
                 <div>
                     <h1 class="mb-0 page-title"><a class="pendancy-home-link" href="pendancy-dashboard.html">Pendancy
-                        Dasboard</a><span class="mx-2"><img src="../images/breadcrumb-right.svg" alt=""></span><span
-                        class="breadcrumb-active">Exception Of Irregular Accounts</span>
+                            Dasboard</a><span class="mx-2"><img src="../images/breadcrumb-right.svg" alt=""></span><span
+                            class="breadcrumb-active">Exception Of Irregular Accounts</span>
                     </h1>
                 </div>
                 <div>
@@ -110,12 +110,11 @@
                 <table class="table table-bordered table-sticky table-edit-alert mb-0">
                     <thead>
                         <tr class="table-row">
-                            <th scope="col" class="sticky-column-left">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                            <th scope="col" class="sticky-column-left bg-table-header">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
-                            <th scope="col" class="sticky-column-left-2 filter-th">RESPONSE</th>
-                            <th scope="col" class="sticky-column-left-3 filter-th">COMMENT</th>
+                            <th scope="col" class="sticky-column-left-2 bg-table-header">RESPONSE</th>
+                            <th scope="col" class="sticky-column-left-3 bg-table-header">COMMENT</th>
                             <th scope="col" class="filter-th">STATUS</th>
                             <th scope="col" class="filter-th">ACCOUNT NO.</th>
                             <th scope="col" class="filter-th">ACCOUNT OPEN DATE</th>
@@ -128,8 +127,7 @@
                             <th scope="col" class="filter-th">ID</th>
                             <th scope="col" class="filter-th">EMPLOYEE CODE</th>
                             <th scope="col" class="filter-th">EXSTAGE ID</th>
-                            <th class="sticky-column bg-table-header w-70px py-1"
-                                scope="col">ACTION</th>
+                            <th class="sticky-column bg-table-header w-115px py-1" scope="col">ACTION</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white">
@@ -191,12 +189,11 @@
                                 <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
                                     placeholder="Search here..." />
                             </td>
-                            <th class="sticky-column py-1 w-70px"></th>
+                            <th class="sticky-column py-1 w-115px"></th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -262,8 +259,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -271,20 +267,30 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -350,8 +356,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -359,20 +364,30 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -438,8 +453,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -447,20 +461,30 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -526,8 +550,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -535,20 +558,30 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -614,8 +647,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -623,20 +655,30 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -702,8 +744,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -711,20 +752,30 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
                         <tr>
                             <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
@@ -790,8 +841,7 @@
                             <td class="w-210px">1011</td>
                             <td class="w-150px">
                                 <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
                                 </div>
                             </td>
                             <td class="w-170px">1017623</td>
@@ -799,101 +849,24 @@
                             <td class="w-130px">Ranjit Ramrao Gole</td>
                             <td class="w-160px">02 June 2021</td>
                             <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
+                            <th class="sticky-column z-index-2 w-115px">
                                 <div class="d-flex justify-content-center">
                                     <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
                                         type="button">
-                                        <img src="../images/edit.svg" alt="" />
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
                                     </a>
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left" scope="row">
-                                <input class="form-check-input" type="checkbox" value=""
-                                    id="flexCheckDefault" />
-                            </th>
-                            <td class="w-175px sticky-column-left-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
-                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
                                     </button>
-                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_name</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_no</label>
-                                            </div>
-                                        </li>
-                                        <li class=" dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_number</label>
-                                            </div>
-                                        </li>
-                                    </ul> -->
-                                </div>
-                            </td>
-                            <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    data-tippy-content="Test comment for exception of DP less than balance"
-                                    data-tippy-placement="right" disabled readonly
-                                    placeholder="Test Comment for excepti..." />
-                            </td>
-                            <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
-                            <td class="w-160px">11251</td>
-                            <td class="w-220px">11 Mar 2022 at 12:53 </td>
-                            <td class="w-150px"></td>
-                            <td class="w-175px">Akola</td>
-                            <td class="w-210px">1011</td>
-                            <td class="w-150px">
-                                <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control"
-                                        placeholder="Select Date">
-                                </div>
-                            </td>
-                            <td class="w-170px">1017623</td>
-                            <td class="w-160px">6300000126</td>
-                            <td class="w-130px">Ranjit Ramrao Gole</td>
-                            <td class="w-160px">02 June 2021</td>
-                            <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-70px">
-                                <div class="d-flex justify-content-center">
-                                    <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot d-flex justify-content-center align-items-center "
-                                        type="button">
-                                        <img src="../images/edit.svg" alt="" />
-                                    </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
                                 </div>
                             </th>
                         </tr>
@@ -1228,8 +1201,132 @@
                     </div>
                 </div>
             </div>
+        </div>
 
     </main>
+
+    <!-- Correlation Popup Modal -->
+    <div class="modal fade" id="correlation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content correlation-modal">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="mb-0 delete-modal-heading">
+                            Co-Relation Details
+                        </h3>
+                        <a data-bs-dismiss="modal" class="cursor-pointer"><img src="../images/close-cross.svg"
+                                alt=""></a>
+                    </div>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link active" id="nav-within-tab" data-bs-toggle="tab" data-bs-target="#nav-within" type="button" role="tab" aria-controls="nav-within" aria-selected="true">Within Scenario</button>
+                          <button class="nav-link" id="nav-other-tab" data-bs-toggle="tab" data-bs-target="#nav-other" type="button" role="tab" aria-controls="nav-other" aria-selected="false">Other Scenarios</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-within" role="tabpanel" aria-labelledby="nav-within-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab" tabindex="0">...</div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Allocation Popup Modal -->
+    <div class="modal fade" id="user-allocation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center">
+            <div class="modal-content allocation-modal">
+                <div class="modal-body p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="mb-0 delete-modal-heading">
+                            User Allocation & Assignment
+                        </h3>
+                        <a data-bs-dismiss="modal" class="cursor-pointer"><img src="../images/close-cross.svg"
+                                alt=""></a>
+                    </div>
+
+                    <table class="table table-bordered table-user-allocation mb-4 w-970px">
+                        <thead>
+                            <tr class="table-row">
+                                <th scope="col" class="filter-th">EMPLOYEE CODE</th>
+                                <th scope="col" class="filter-th">EMPLOYEE NAME</th>
+                                <th scope="col" class="filter-th">STATUS</th>
+                                <th scope="col" class="filter-th">STAGES</th>
+                                <th scope="col" class="filter-th">REASSIGN TO USER</th>
+                                <th scope="col" class="filter-th">EXCLUDE FROM MASTER REFRESH</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                            <tr>
+                                <td class="w-130px">UATA1087</td>
+                                <td class="w-180px">UATA1087 UATA1087</td>
+                                <td class="w-120px text-center"><span class="tag bg-green">Enabled</span></td>
+                                <td class="w-150px">L1</td>
+                                <td class="w-160px"><input type="text" class="form-control h-24px" id="inputText4"
+                                        placeholder="UATA1087" disabled /></td>
+                                <td class="w-230px"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary">Update Reassignment</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Add Question Popup Modal -->
     <div class="modal fade" id="add-question" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1281,7 +1378,8 @@
     </div>
 
     <!-- Answer Type Popup Modal -->
-    <div class="modal fade" id="answer-type" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-lg fade" id="answer-type" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content delete-user-modal">
                 <div class="modal-body p-4">
