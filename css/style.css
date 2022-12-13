@@ -22,7 +22,7 @@ main {
 } */
 
 th.sticky-column-left::after {
-  box-shadow: 0px 0px 3px rgba(48, 46, 56, 0.3);
+  box-shadow: 1px 0px 3px rgba(48, 46, 56, 0.3);
   position: absolute;
   top: 0;
   right: 0;
@@ -34,7 +34,7 @@ th.sticky-column-left::after {
 
 th.sticky-column-left-3::after,
 td.sticky-column-left-3::after {
-  box-shadow: 0px 0px 3px rgba(48, 46, 56, 0.3);
+  box-shadow: 1px 0px 3px rgba(48, 46, 56, 0.3);
   position: absolute;
   top: 0;
   right: 0;
@@ -45,7 +45,7 @@ td.sticky-column-left-3::after {
 }
 
 th.sticky-column::before {
-  box-shadow: 0px 0px 3px rgba(48, 46, 56, 0.3);
+  box-shadow: -1px 0px 3px rgba(48, 46, 56, 0.3);
   position: absolute;
   top: 0;
   bottom: -1px;
@@ -121,10 +121,10 @@ section.flex-fill {
   background: #d4d4e2;
 }
 
-.table{
+/* .table{
   height: 418px;
     overflow-y: scroll;
-}
+} */
 
 .all-donor-grid {
   width: calc(100% - 40px);
@@ -683,6 +683,14 @@ tbody > tr > td {
   border-radius: 10px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-970px {
+  width: 970px !important;
+}
+
 .delete-modal-heading {
   font-weight: 700;
   font-size: 17px;
@@ -863,13 +871,13 @@ tbody > tr > td {
 
 .table-sticky {
   position: relative;
-  width: 1500px!important;
+  width: 1500px !important;
   overflow-x: scroll;
 }
 
-.table-pendancy-option-3{
+.table-pendancy-option-3 {
   position: relative;
-  width: 4740px!important;
+  width: 4740px !important;
   overflow-x: scroll;
 }
 
@@ -885,7 +893,7 @@ tbody > tr > td {
   width: 3000px !important;
 }
 
-.table-exception-stage{
+.table-exception-stage {
   width: 2000px !important;
 }
 
@@ -1175,11 +1183,11 @@ tbody > tr > td {
   width: 125px;
 }
 
-.w-75px{
+.w-75px {
   width: 75px;
 }
 
-.w-190px{
+.w-190px {
   width: 190px;
 }
 
@@ -1477,10 +1485,10 @@ tbody > tr > td {
   width: 116px;
 }
 
-.table tr td{
+.table tr td {
   height: 40px !important;
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .no-height {
@@ -1540,6 +1548,22 @@ tbody > tr > td {
   width: 165px;
 }
 
-.w-320px{
+.w-320px {
   width: 320px;
+}
+
+.allocation-modal {
+  width: 1030px;
+  height: 478px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px 2px rgba(42, 41, 50, 0.15);
+  border-radius: 10px;
+}
+
+.correlation-modal {
+  width: 776px;
+  height: 501px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px 2px rgba(42, 41, 50, 0.15);
+  border-radius: 10px;
 }
