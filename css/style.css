@@ -832,10 +832,10 @@ tbody > tr > td {
   height: 40px !important;
 }
 
-.table-row th{
-  height: 30px!important;
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+.table-row th {
+  height: 30px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .sticky-column {
@@ -847,7 +847,7 @@ tbody > tr > td {
 }
 
 .sticky-column-left {
-  left: 0 !important;
+  left: -1px !important;
   position: sticky !important;
   top: auto !important;
   width: 40px !important;
@@ -1572,4 +1572,37 @@ tbody > tr > td {
   background: #ffffff;
   box-shadow: 0px 4px 10px 2px rgba(42, 41, 50, 0.15);
   border-radius: 10px;
+}
+
+.nav-link.w-50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px !important;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2a2932;
+}
+
+.nav-link.w-50.active {
+  background: #e9e9f0;
+  border-bottom: 1px solid #dddde7;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2a2932;
+}
+
+.no-data-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #2a2932;
+}
+
+.h-100{
+  height: 100%;
 }
