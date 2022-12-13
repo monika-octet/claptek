@@ -832,6 +832,12 @@ tbody > tr > td {
   height: 40px !important;
 }
 
+.table-row th{
+  height: 30px!important;
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+}
+
 .sticky-column {
   right: 0 !important;
   position: sticky !important;
