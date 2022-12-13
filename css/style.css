@@ -32,7 +32,7 @@ th.sticky-column-left::after {
   pointer-events: none;
 }
 
-th.sticky-column-left-3::after,
+th.sticky-column-left-2::after,
 td.sticky-column-left-3::after {
   box-shadow: 1px 0px 3px rgba(48, 46, 56, 0.3);
   position: absolute;
@@ -1605,4 +1605,10 @@ tbody > tr > td {
 
 .h-100{
   height: 100%;
+}
+
+.table-row{
+  position: sticky;
+  top: 0;
+  z-index: 1001;
 }
