@@ -145,424 +145,426 @@
                 </li>
             </ul>
             <div class="tab-content main-tab-content flex-fill" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="all-donor-grid table-holder">
-                        <table class="table table-bordered table-sticky table-exception-stage mb-0 position-relative">
-                            <thead>
-                                <tr class="table-row">
-                                    <th class="sticky-column-left" scope="col">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <th scope="col" class="filter-th">STAGE NAME</th>
-                                    <th scope="col" class="filter-th">STATUS</th>
-                                    <th scope="col" class="filter-th">IS PART OF ALLOCATION</th>
-                                    <th scope="col" class="filter-th">IS START STAGE</th>
-                                    <th scope="col" class="filter-th">IS END STAGE</th>
-                                    <th scope="col" class="filter-th">SHOW ALL REPORT FIELDS</th>
-                                    <th scope="col" class="filter-th">MAKER ID</th>
-                                    <th scope="col" class="filter-th">CREATED ON</th>
-                                    <th scope="col" class="filter-th">MODIFIED ON</th>
-                                    <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
-                                        scope="col">ACTION</th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white">
-                                <tr>
-                                    <th class="sticky-column-left" scope="row"></th>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <td>
-                                        <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
-                                            placeholder="Search here..." />
-                                    </td>
-                                    <th class="sticky-column py-1"></th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td class="w-15">True</td>
-                                    <td class="w-8">True</td>
-                                    <td class="w-8">False</td>
-                                    <td class="w-15">False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
+                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="table-layout">
+                        <div class="all-donor-grid table-holder position-relative flex-fill">
+                            <table class="table table-bordered table-sticky table-exception-stage mb-0 position-relative">
+                                <thead>
+                                    <tr class="table-row">
+                                        <th class="sticky-column-left" scope="col">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <th scope="col" class="filter-th">STAGE NAME</th>
+                                        <th scope="col" class="filter-th">STATUS</th>
+                                        <th scope="col" class="filter-th">IS PART OF ALLOCATION</th>
+                                        <th scope="col" class="filter-th">IS START STAGE</th>
+                                        <th scope="col" class="filter-th">IS END STAGE</th>
+                                        <th scope="col" class="filter-th">SHOW ALL REPORT FIELDS</th>
+                                        <th scope="col" class="filter-th">MAKER ID</th>
+                                        <th scope="col" class="filter-th">CREATED ON</th>
+                                        <th scope="col" class="filter-th">MODIFIED ON</th>
+                                        <th class="sticky-column bg-table-header py-1 d-flex justify-content-start align-items-center"
+                                            scope="col">ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white">
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row"></th>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <td>
+                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList"
+                                                placeholder="Search here..." />
+                                        </td>
+                                        <th class="sticky-column py-1"></th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td class="w-15">True</td>
+                                        <td class="w-8">True</td>
+                                        <td class="w-8">False</td>
+                                        <td class="w-15">False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>R1</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>C2</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Dropped</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th class="sticky-column-left" scope="row">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" />
+                                        </th>
+                                        <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
+                                        <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
+                                        <td>True</td>
+                                        <td>True</td>
+                                        <td>False</td>
+                                        <td>False</td>
+                                        <td class="w-7">SMAL512</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <td class="w-15">20 Feb 2021 at 20:35</td>
+                                        <th class="sticky-column py-1">
+                                            <div class="d-flex justify-content-center">
+                                                <button data-bs-toggle="modal" data-bs-target="#edit-exception"
+                                                    class="btn btn-sm btn-dot me-2" type="button">
+                                                    <img src="images/edit.svg" alt="" />
+                                                </button>
+                                                <button data-bs-toggle="modal" data-bs-target="#delete-exception"
+                                                    class="btn btn-sm btn-dot" type="button">
+                                                    <img src="images/delete.svg" alt="" />
+                                                </button>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="all-donor-grid mt-auto">
+                            <div class="pagination-wrap mt-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <span>Show</span>
+                                            <select class="form-select picker-select" id="pagination" name="code" style="display: none">
+                                                <option value="1" selected="selected">10</option>
+                                                <option value="2">20</option>
+                                                <option value="3">30</option>
+                                                <option value="4">50</option>
+                                                <option value="5">100</option>
+                                            </select>
+                                            <span>Entries</span>
                                         </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>R1</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>C2</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Partial Close</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15 text-pink"><span class="me-1 fs-6">&#x2022;</span>Dropped</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th class="sticky-column-left" scope="row">
-                                        <input class="form-check-input" type="checkbox" value=""
-                                            id="flexCheckDefault" />
-                                    </th>
-                                    <td class="w-15"><span class="me-1 fs-6">&#x2022;</span>L1</td>
-                                    <td class="text-center w-7"><span class="tag bg-green">Enabled</span></td>
-                                    <td>True</td>
-                                    <td>True</td>
-                                    <td>False</td>
-                                    <td>False</td>
-                                    <td class="w-7">SMAL512</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <td class="w-15">20 Feb 2021 at 20:35</td>
-                                    <th class="sticky-column py-1">
-                                        <div class="d-flex justify-content-center">
-                                            <button data-bs-toggle="modal" data-bs-target="#edit-exception"
-                                                class="btn btn-sm btn-dot me-2" type="button">
-                                                <img src="images/edit.svg" alt="" />
-                                            </button>
-                                            <button data-bs-toggle="modal" data-bs-target="#delete-exception"
-                                                class="btn btn-sm btn-dot" type="button">
-                                                <img src="images/delete.svg" alt="" />
-                                            </button>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="all-donor-grid mt-auto">
-                        <div class="pagination-wrap mt-3">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <span>Show</span>
-                                        <select class="form-select picker-select" id="pagination" name="code" style="display: none">
-                                            <option value="1" selected="selected">10</option>
-                                            <option value="2">20</option>
-                                            <option value="3">30</option>
-                                            <option value="4">50</option>
-                                            <option value="5">100</option>
-                                        </select>
-                                        <span>Entries</span>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="d-flex justify-content-end align-items-center">
-                                        <span>Total Pages 04:</span>
-                                        <nav aria-label="Page navigation example">
-                                            <ul class="pagination justify-content-center">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                                        <img src="images/prev.svg" alt="" />
-                                                    </a>
-                                                </li>
-                                                <li class="page-item active">
-                                                    <a class="page-link" href="#">1</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">2</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">3</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="#">
-                                                        <img src="images/next.svg" alt="" />
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <span>Total Pages 04:</span>
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                            <img src="images/prev.svg" alt="" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="#">1</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">2</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">3</a>
+                                                    </li>
+                                                    <li class="page-item">
+                                                        <a class="page-link" href="#">
+                                                            <img src="images/next.svg" alt="" />
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade h-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     ...
                 </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="tab-pane fade h-100" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                     ...
                 </div>
-                <div class="tab-pane fade" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab">
+                <div class="tab-pane fade h-100" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab">
                     ...
                 </div>
             </div>
