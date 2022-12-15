@@ -208,7 +208,7 @@
             <tr class="footer2" id="footerid">
 
                 <td class="footer2" id="foo1">
-                    <div class="copyright">Copyright © Claptek Private Limited.</div>
+                    <div class="copyright">Copyright ï¿½ Claptek Private Limited.</div>
 
                 </td>
 
@@ -284,5 +284,5 @@
     </form>
     <uc1:Menu ID="Menu1" runat="server" />
 
-</body>
+<script>$('#pagination').picker();</script></body>
 </html>

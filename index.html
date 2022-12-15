@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <main>
-        <section class="w-100 p-0 m-0">
-            <div class="d-flex justify-content-between mb-0">
-                <div class="login-left-column col-md-5 padding-30px d-flex flex-column justify-content-between">
+    <main class="height-100vh">
+        <section class="w-100 p-0 m-0 h-100">
+            <div class="d-flex justify-content-between mb-0 h-100">
+                <div class="login-left-column col-md-5 padding-30px d-flex flex-column justify-content-center">
                     <div class="logo">
                         <img src="images/claptek-logo.svg" alt="" class="img-fluid">
                     </div>
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="login-right-column p-0 col-md-7 d-flex flex-column justify-content-between">
+                <div class="login-right-column p-0 col-md-7 d-flex flex-column justify-content-center">
                     <div class="content d-flex flex-column justify-content-center login-form m-auto">
                         <div class="form-text-content mb-4">
                             <h2 class="form-heading mb-0">Login</h2>
@@ -69,7 +69,8 @@
     <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
     <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script><script src="plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="plugin/datepicker/datepicker.js" type="text/javascript"></script>
     <script>
         const template = document.getElementById('template');
         // tippy('.myTooltip', {
@@ -90,6 +91,6 @@
             });
         });
     </script>
-</body>
+<script>$('#pagination').picker();</script></body>
 
 </html>

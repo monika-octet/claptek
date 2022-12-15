@@ -973,6 +973,8 @@ tbody > tr > td {
 .ageing-master-section {
   background: #e7e7f1;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .w-2 {
@@ -1758,4 +1760,90 @@ tbody > tr > td {
   font-size: 12px;
   line-height: 15px;
   color: #2a2932;
+}
+
+.create-rules-text {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  color: #2a2932;
+}
+
+.create-rules-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  background: #f0f0f5;
+  width: 100%;
+}
+
+.fields-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 20px;
+  width: 100%;
+}
+
+.add-rules-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.rule-creation-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.rule-creation-bg {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  height: 45px;
+  background: #89899a;
+}
+
+.btn-plus {
+  width: 34px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  background: #219d82;
+  border-radius: 5px;
+}
+
+.or {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2a2932;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.table-layout {
+  display: flex!important;
+  flex-direction: column!important;
+  height: 100%!important;
 }
