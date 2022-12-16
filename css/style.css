@@ -2,7 +2,7 @@ header {
   background: #131d40;
   height: 60px;
   position: sticky;
-  z-index: 16;
+  z-index: 21;
   top: 0;
 }
 html,
@@ -1925,4 +1925,17 @@ tbody > tr > td {
   font-size: 15px;
   line-height: 18px;
   color: #2a2932;
+}
+
+.modal-html-header {
+  position: sticky;
+  top: 60px;
+  align-self: flex-start;
+  z-index: 19;
+  background: white;
+}
+
+.search-input-icon {
+  background: #f0f0f5 url("../images/search.svg") no-repeat 13px center;
+  padding-left: 35px;
 }
