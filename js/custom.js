@@ -19,3 +19,7 @@ $('#workflow').on('click', function(){
   $(".workflow-block").show();
 })
 
+$('.add-new-rules-btn').on('click', function(){
+  $('#allocated-rules-tab-pane').toggleClass('show active')
+  $('#add-rules-tab-pane').toggleClass('show active')
+})
