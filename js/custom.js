@@ -16,7 +16,7 @@ $('.removeToDashboard').on('click', function(){
 
 $(".workflow-block").hide();
 $('#workflow').on('click', function(){
-  $(".workflow-block").show();
+  $(".workflow-block").fadeToggle();
 })
 
 $('.add-new-rules-btn').on('click', function(){
@@ -28,3 +28,4 @@ $('.rule-list-section').hide();
 $('.btn-add-rule-save').on('click', function(){
   $('.rule-list-section').fadeIn();
 })
+

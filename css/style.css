@@ -275,7 +275,7 @@ section.flex-fill {
   padding: 20px 40px 20px 25px !important;
 }
 header .dropdown-toggle::after {
-  content: url("../images/menu-down.svg");
+  content: url("../images/menu-down.svg") !important;
   border: none;
   top: 19px;
   position: absolute;
@@ -1938,4 +1938,18 @@ tbody > tr > td {
 .search-input-icon {
   background: #f0f0f5 url("../images/search.svg") no-repeat 13px center;
   padding-left: 35px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/down.svg) !important;
+  background-size: auto !important;
+  background-position: center !important;
+}
+
+.custom-radio:checked[type="radio"] {
+  background-image: url(../images/radio-green-fill.svg) !important;
+  background-size: auto !important;
+  background-position: center !important;
+  background-color: #ffffff!important;
+    border-color: #219d82;
 }
