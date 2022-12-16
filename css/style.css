@@ -1901,3 +1901,28 @@ tbody > tr > td {
   line-height: 16px;
   color: #2a2932;
 }
+
+.main-content-modal-html {
+  background: #e7e7f1;
+}
+
+.padding-x-20 {
+  padding: 0 20px;
+}
+
+.rule {
+  height: 55px;
+  background: #f8f8fc;
+  border-radius: 2px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rule-text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2a2932;
+}
