@@ -129,21 +129,44 @@
                     <button class="nav-link" id="pills-locked-tab" data-bs-toggle="pill" data-bs-target="#pills-locked"
                         type="button" role="tab" aria-controls="pills-locked" aria-selected="false">Locked (1)</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item me-3" role="presentation">
                     <button class="nav-link" id="pills-dormant-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-dormant" type="button" role="tab" aria-controls="pills-dormant"
                         aria-selected="false">Dormant (1)</button>
                 </li>
+                <div class="hide-link-user justify-content-center align-items-center" style="display: flex;">
+                    <li class="nav-item d-flex justify-content-center align-items-center me-3">
+                        <a href="" class="link-text-black export-link"><img src="images/export.svg" alt="" class="me-1">Export</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center me-3">
+                        <a href="" class="link-text-black delete-link"><img src="images/delete.svg" alt="" class="me-1">Delete</a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center">
+                        <a class="link-text-black dropdown-toggle d-flex align-items-center" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                            aria-expanded="false">Change Status<img src="images/dropdown-icon.svg" alt=""
+                                class="ms-2"></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Enable</a></li>
+                            <li><a class="dropdown-item" href="#">Disable</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                            <li><a class="dropdown-item" href="#">Lock</a></li>
+                            <li><a class="dropdown-item" href="#">Dormant</a></li>
+                        </ul>
+                    </li>
+                </div>
             </ul>
             <div class="tab-content main-tab-content flex-fill" id="pills-tabContent">
-                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
                     <div class="table-layout">
                         <div class="all-donor-grid table-holder position-relative flex-fill">
                             <table class="table table-bordered table-responsive mb-0">
                                 <thead>
                                     <tr class="table-row">
                                         <th scope="col">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <th scope="col" class="filter-th">FIRST NAME</th>
                                         <th scope="col" class="filter-th">LAST NAME</th>
@@ -158,34 +181,42 @@
                                 <tbody class="bg-white">
                                     <tr>
                                         <th scope="row">
-    
+
                                         </th>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td>
-                                            <input class="form-control h-24px" list="datalistOptions" id="exampleDataList" placeholder="Search here...">
+                                            <input class="form-control h-24px" list="datalistOptions"
+                                                id="exampleDataList" placeholder="Search here...">
                                         </td>
                                         <td></td>
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input show-link-user" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -193,7 +224,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-green">Enabled</span></td>
                                         <td class="w-30">CPU</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button data-bs-toggle="modal" data-bs-target="#create-user"
@@ -209,7 +241,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input show-link-user" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -217,7 +250,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-purple">Disable</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -231,7 +265,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -239,7 +274,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-green">Enabled</span></td>
                                         <td class="w-30">CH_Cluster Head</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -253,7 +289,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -261,7 +298,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-deleted">Deleted</span></td>
                                         <td class="w-30">PBA_PB Authorizer</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -275,7 +313,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -283,7 +322,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-green">Enabled</span></td>
                                         <td class="w-30">CPU</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -297,7 +337,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -305,7 +346,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-purple">Locked</span></td>
                                         <td class="w-30">View</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -319,7 +361,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -327,7 +370,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -341,7 +385,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -349,7 +394,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -363,7 +409,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -371,7 +418,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -385,7 +433,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -393,7 +442,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -407,7 +457,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -415,7 +466,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -429,7 +481,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -437,7 +490,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -451,7 +505,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -459,7 +514,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -473,7 +529,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -481,7 +538,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -495,7 +553,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -503,7 +562,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -517,7 +577,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -525,7 +586,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -539,7 +601,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -547,7 +610,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -561,7 +625,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
                                         </th>
                                         <td>John</td>
                                         <td>Doe</td>
@@ -569,7 +634,8 @@
                                         <td>A25902</td>
                                         <td class="text-center"><span class="tag bg-orange">Dormant</span></td>
                                         <td class="w-30">BM_Branch Manager</td>
-                                        <td>5</td>
+                                        <td><a class="table-td-link" data-bs-toggle="modal" data-bs-target="#profiles"
+                                                href="#">5</a></td>
                                         <td class="text-center w-7">
                                             <div class="d-flex justify-content-center">
                                                 <button class="btn btn-sm btn-dot me-2" type="button">
@@ -590,7 +656,8 @@
                                     <div class="col-md-6">
                                         <div class="d-flex justify-content-start align-items-center">
                                             <span>Show</span>
-                                            <select class="form-select picker-select" id="pagination" name="code" style="display: none;">
+                                            <select class="form-select picker-select" id="pagination" name="code"
+                                                style="display: none;">
                                                 <option value="1" selected="selected">10</option>
                                                 <option value="2">20</option>
                                                 <option value="3">30</option>
@@ -606,11 +673,13 @@
                                             <nav aria-label="Page navigation example">
                                                 <ul class="pagination justify-content-center">
                                                     <li class="page-item disabled">
-                                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                                        <a class="page-link" href="#" tabindex="-1"
+                                                            aria-disabled="true">
                                                             <img src="images/prev.svg" alt="">
                                                         </a>
                                                     </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
+                                                    </li>
                                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                                     <li class="page-item">
@@ -627,11 +696,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade h-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...
+                <div class="tab-pane fade h-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    ...
                 </div>
-                <div class="tab-pane fade h-100" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...
+                <div class="tab-pane fade h-100" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    ...
                 </div>
-                <div class="tab-pane fade h-100" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab">...</div>
+                <div class="tab-pane fade h-100" id="pills-draft" role="tabpanel" aria-labelledby="pills-draft-tab">...
+                </div>
             </div>
         </section>
 
@@ -749,102 +821,102 @@
                                                 <label for="inputText4" class="form-label">Role</label>
 
                                                 <div class="dropdown">
-                                                    <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Select Role
-                                                    </button>
-                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_name</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_no</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class=" dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_number</label>
-                                                            </div>
-                                                        </li>
-                                                    </ul> -->
+                                                    <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Select Role
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                id="inlineCheckbox1" value="option1" checked/>
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_activation_date</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_expiry_date</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_name</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_no</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class=" dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="radio"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_number</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <label for="inputText4" class="form-label">Profile</label>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Select Profile
-                                                    </button>
-                                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_name</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_no</label>
-                                                            </div>
-                                                        </li>
-                                                        <li class=" dropdown-item-select">
-                                                            <div class="form-check d-flex align-items-center">
-                                                                <input class="form-check-input me-2" type="checkbox"
-                                                                    id="inlineCheckbox1" value="option1" />
-                                                                <label class="form-check-label select-dropdown-label"
-                                                                    for="inlineCheckbox1">Account_number</label>
-                                                            </div>
-                                                        </li>
-                                                    </ul> -->
-                                                </div>
+                                                <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Select Profile
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-select p-2">
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="checkbox"
+                                                                id="inlineCheckbox1" value="option1" checked/>
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_activation_date</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="checkbox"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_expiry_date</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="checkbox"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_name</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mb-2 pb-2 dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="checkbox"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_no</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class=" dropdown-item-select">
+                                                        <div class="form-check d-flex align-items-center">
+                                                            <input class="form-check-input me-2" type="checkbox"
+                                                                id="inlineCheckbox1" value="option1" />
+                                                            <label class="form-check-label select-dropdown-label"
+                                                                for="inlineCheckbox1">Account_number</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </form>
@@ -877,13 +949,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- Profiles Popup Modal -->
+        <div class="modal fade" id="profiles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content delete-user-modal">
+                    <div class="modal-header border-0 pb-0 d-flex justify-content-end">
+                        <a type="button" data-bs-dismiss="modal" aria-label="Close"><img src="images/close-cross.svg"
+                                alt=""></a>
+                    </div>
+                    <div class="modal-body pt-0 p-4">
+                        <h3 class="section-heading">Profiles</h3>
+                        <ul class="list-group modal-list">
+                            <li class="list-group-item">MYTEST_NewSubMutest</li>
+                            <li class="list-group-item">Offiste Monitoring Unit_KYC</li>
+                            <li class="list-group-item">Offsite Monitoring Unit_AF_OE</li>
+                            <li class="list-group-item">Offsite Monitoring Unit_CPU RL Ops</li>
+                            <li class="list-group-item">Offsite Monitoring Unit_KYC</li>
+                            <li class="list-group-item">UAT_Reportd</li>
+                            <li class="list-group-item">Offiste Monitoring Unit_KYC</li>
+                            <li class="list-group-item">Offsite Monitoring Unit_AF_OE</li>
+                            <li class="list-group-item">Offsite Monitoring Unit_CPU RL Ops</li>
+                            <li class="list-group-item">Offsite Monitoring Unit_KYC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- script -->
     <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
     <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script><script src="plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="plugin/picker/picker.min.js" type="text/javascript"></script>
     <script src="plugin/datepicker/datepicker.js" type="text/javascript"></script>
     <script>
         const template = document.getElementById('template');
@@ -905,6 +1005,14 @@
             });
         });
     </script>
-<script>$('#pagination').picker();</script></body>
+    <script>
+        $('.hide-link-user').hide();
+        $('.show-link-user').on('click', function () {
+            $('.hide-link-user').fadeToggle();
+        })
+    </script>
+    <script>$('#pagination').picker();</script>
+    <script src="js/custom.js" type="text/javascript"></script>
+</body>
 
 </html>
