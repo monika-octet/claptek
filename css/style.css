@@ -1950,6 +1950,65 @@ tbody > tr > td {
   background-image: url(../images/radio-green-fill.svg) !important;
   background-size: auto !important;
   background-position: center !important;
-  background-color: #ffffff!important;
-    border-color: #219d82;
+  background-color: #ffffff !important;
+  border-color: #219d82;
+}
+
+.small-checkbox {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.initials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 30px;
+  height: 30px;
+  background: #d6ebfa;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: #0e0d2b;
+}
+
+.modal-list .list-group-item {
+  height: 40px !important;
+}
+
+.exception-sequence-modal {
+  width: 370px !important;
+}
+
+.exception-sequence-modal-list{
+  height: 369px;
+  overflow-y: scroll;
+}
+
+.export-link:hover{
+  color: #219D82!important;
+}
+
+.delete-link:hover{
+  color: #B94A30!important;
+}
+
+.w-205px{
+  width: 205px;
+}
+
+.w-155px{
+  width: 155px;
+}
+
+.w-101px{
+  width: 101px;
+}
+
+.w-167px{
+  width: 167px;
 }
