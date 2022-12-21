@@ -1984,31 +1984,39 @@ tbody > tr > td {
   width: 370px !important;
 }
 
-.exception-sequence-modal-list{
+.exception-sequence-modal-list {
   height: 369px;
   overflow-y: scroll;
 }
 
-.export-link:hover{
-  color: #219D82!important;
+.export-link:hover {
+  color: #219d82 !important;
 }
 
-.delete-link:hover{
-  color: #B94A30!important;
+.delete-link:hover {
+  color: #b94a30 !important;
 }
 
-.w-205px{
+.w-205px {
   width: 205px;
 }
 
-.w-155px{
+.w-155px {
   width: 155px;
 }
 
-.w-101px{
+.w-101px {
   width: 101px;
 }
 
-.w-167px{
+.w-167px {
   width: 167px;
 }
+
+td .cut {
+  width: 375px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
