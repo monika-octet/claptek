@@ -29,3 +29,18 @@ $('.btn-add-rule-save').on('click', function(){
   $('.rule-list-section').fadeIn();
 })
 
+$(document).ready(function(){
+    $('.select_all').on('click',function(){
+        if(this.checked){
+            $('.form-check-input').each(function(){
+                this.checked = true;
+            });
+        }else{
+             $('.form-check-input').each(function(){
+                this.checked = false;
+            });
+        }
+    });
+});
+
+$('.table-row:first-child input').addClass('select_all show-link');
