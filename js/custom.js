@@ -16,7 +16,12 @@ $('.removeToDashboard').on('click', function(){
 
 $(".workflow-block").hide();
 $('#workflow').on('click', function(){
-  $(".workflow-block").fadeToggle();
+  if(this.checked){
+    $(".workflow-block").fadeIn();
+  } else {
+    $(".workflow-block").fadeOut();
+  }
+  
 })
 
 $('.add-new-rules-btn').on('click', function(){

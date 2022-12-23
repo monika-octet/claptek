@@ -942,7 +942,27 @@ tbody > tr > td {
 }
 
 .fields-library-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 20px;
+  gap: 30px;
+}
+
+.field-library-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.field-library-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
 }
 
 .link-text-success {
@@ -2020,3 +2040,50 @@ td .cut {
   white-space: nowrap;
 }
 
+.w-206px {
+  width: 206px;
+}
+
+.w-103px {
+  width: 103px;
+}
+
+.role-popup-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.text-info-closed {
+  color: #ab941b;
+}
+
+.text-partial-close {
+  color: #9a3131;
+}
+
+.text-dropped {
+  color: #955336;
+}
+
+.text-delete {
+  color: #ce3d29;
+}
+
+.text-display {
+  color: #3957be;
+}
+
+.text-audit-level {
+  color: #7f29b4;
+}
+
+.ageing-popup-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
