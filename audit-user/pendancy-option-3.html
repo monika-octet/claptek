@@ -197,52 +197,23 @@
                             </th>
                             <td class="w-175px sticky-column-left-2">
                                 <div class="dropdown">
+                                    <!-- <select name="basic" id="response-select" class="picker-select btn btn-select h-24px btn-select-full-width">
+                                        <option value="" disabled hidden>Select</option>
+                                        <option value="1">Raise to Branch</option>
+                                        <option value="2">Drop Alert</option>
+                                    </select> -->
                                     <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
                                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Select
                                     </button>
-                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                    <ul class="dropdown-menu dropdown-menu-select p-2" style="z-index: 15;">
                                         <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                            </div>
+                                            <a class="dropdown-item dropdown-item-text" href="#">Raise to Branch</a>
                                         </li>
                                         <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                            </div>
+                                            <a class="dropdown-item dropdown-item-text" href="#">Drop Alert</a>
                                         </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_name</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_no</label>
-                                            </div>
-                                        </li>
-                                        <li class=" dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_number</label>
-                                            </div>
-                                        </li>
-                                    </ul> -->
+                                    </ul>
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3"data-tippy-content="Test comment for exception of DP less than balance"
@@ -393,6 +364,7 @@
                                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Select
                                     </button>
+                                    
                                     <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
                                         <li class="mb-2 pb-2 dropdown-item-select">
                                             <div class="form-check d-flex align-items-center">
@@ -2413,6 +2385,8 @@
                 $(this).parents(".grid-wrap").toggleClass("active");
             });
         });
+
+        $('#response-select').picker();
     </script>
 <script>$('#pagination').picker();</script></body>
 

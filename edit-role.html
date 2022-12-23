@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Role</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css" />
+    <!-- picker -->
+    <link rel="stylesheet" href="plugin/picker/picker.min.css" type="text/css" />
+    <link rel="stylesheet" href="plugin/datepicker/datepicker.css" type="text/css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pendancy-dashboard.html">Pendancy Dashboard</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Scenario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="manage-scenario.html">Manage Scenario</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Auto Closer Configuration</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Unassigned Report</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">In Active User Report</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Delete Exceptions</a></li>
+                            <li>
+                                <a class="dropdown-item" href="stage-traversal.html">Stage Traversal Plan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="questions.html">Questions</a></li>
+                            <li><a class="dropdown-item" href="answer-template.html">Answer Template</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Data Integration Staging Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="user-management.html">User Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="role-management.html">Roles Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="profile-management.html">Profile Management</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Config
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="exception-stage.html">Exception Stage</a></li>
+                            <li><a class="dropdown-item" href="fields-library.html">Fields Library</a></li>
+                            <li><a class="dropdown-item" href="ageing-master.html">Ageing Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Reports</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <img src="images/powerby.svg" alt="" />
+                    <div class="profile-name">JD</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid no-height">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="col">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Update Role
+                    </h5>
+                </div>
+
+                <div class="col text-end">
+                    <a href="role-management.html" class="btn btn-light mr-10px">
+                        Cancel
+                    </a>
+                    <!-- <button type="button" class="btn btn-outline btn-outline-success-custom mr-10px">Save as
+                        draft</button> -->
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </section>
+        <section class="field-library-section py-0 px-0 table-layout flex-fill">
+            <div class="main-content-modal-html">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-md-2 sidebar-section">
+                        <ul class="nav flex-column fixed-sidenav">
+                            <li class="nav-item position-relative">
+                                <a class="nav-link sidebar-link active" aria-current="page" href="#">Basic
+                                    Details</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link sidebar-link" href="#">Access Rights Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 user-modal-right-section">
+                        <div class="card p-3 mb-3">
+                            <h3 class="section-heading">Basic Details</h3>
+                            <form class="mt-2">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="inputText4" class="form-label">Role Name</label>
+                                        <input type="text" class="form-control" id="inputText4"
+                                            value="Admin Internal Audit" placeholder="Enter Role Name" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputText4" class="form-label">Role Description</label>
+                                        <textarea class="form-control h-176 filled-textarea"
+                                            placeholder="Enter Role Description" id="floatingTextarea" value="">1.	Approve/checker of scenarios created/modified by Users of pre-define IA Sub Unit
+2.	Approval of deletion of alerts 
+3.	Approval of master uploads of pre-define IA Sub Unit
+4.	Force reopening of alerts / dropped alerts of pre-define IA Sub Unit
+5.	To be able to view & download all dashboards 
+6.	Assigning of alerts to branches /Auditor  of pre-define IA Sub Unit
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card p-3">
+                            <h3 class="section-heading">Access Rights Details</h3>
+                            <div class="mt-2">
+                                <table class="table table-bordered table-responsive mb-0">
+                                    <thead>
+                                        <tr class="table-row">
+                                            <th scope="col">ACCESS RIGHT</th>
+                                            <th class="text-center" scope="col">ADDITION</th>
+                                            <th class="text-center" scope="col">
+                                                MODIFICATION
+                                            </th>
+                                            <th class="text-center" scope="col">DELETION</th>
+                                            <th class="text-center" scope="col">VIEW</th>
+                                            <th class="text-center" scope="col">ASSIGN</th>
+                                            <th class="text-center" scope="col">APPROVE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white">
+                                        <tr>
+                                            <td scope="row">User Management</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">User Management</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Group Management</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Analysis</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Access Right</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" checked />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Profile</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Analysis Scheduling</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Main-Dashboard</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Alert Search</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Global Report</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">InActive Report</td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input small-checkbox" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
+                                            </td>
+                                            <td class="input-td text-center">
+                                                <input class="form-check-input check-highlight small-checkbox" type="checkbox"
+                                                    value="" id="flexCheckDefault" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="plugin/datepicker/datepicker.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script>
+        const template = document.getElementById("template");
+        // tippy('.myTooltip', {
+        //     content: template.innerHTML,
+        //     placement: 'right',
+        //     allowHTML: true,
+        //     theme: 'blue',
+        // });
+        tippy("[data-tippy-content]", {
+            theme: "blue-small",
+        });
+    </script>
+    <script>
+        $('#data-duplicate').picker();
+        $('#auto-drop').picker();
+        $('#correlation-within').picker();
+        $('#correlation-across').picker();
+        $('#pagination').picker();
+        $('#function-name').picker();
+        $('#select-fields').picker();
+        $('#select-datatype').picker();
+        $('#select-operator').picker();
+        $('#group-fields').picker();
+        $('#stage').picker();
+        $('#assign-fields').picker();
+        $('#employee').picker();
+        $('#current').picker();
+        $('#stored').picker();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#open-subgrid").click(function () {
+                $(".grid-sub-row").toggle();
+                $(this).parents(".grid-wrap").toggleClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        $('.hide-link').hide();
+        $('.show-link').on('click', function () {
+            $('.hide-link').fadeToggle();
+        })
+    </script>
+
+    <script>$('#pagination').picker();</script>
+
+</body>
+
+</html>

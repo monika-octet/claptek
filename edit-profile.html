@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Profile</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="plugin/bootstrap/bootstrap.min.css" />
+    <!-- picker -->
+    <link rel="stylesheet" href="plugin/picker/picker.min.css" type="text/css" />
+    <link rel="stylesheet" href="plugin/datepicker/datepicker.css" type="text/css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pendancy-dashboard.html">Pendancy Dashboard</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Scenario
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="manage-scenario.html">Manage Scenario</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Auto Closer Configuration</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Unassigned Report</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">In Active User Report</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Delete Exceptions</a></li>
+                            <li>
+                                <a class="dropdown-item" href="stage-traversal.html">Stage Traversal Plan</a>
+                            </li>
+                            <li><a class="dropdown-item" href="questions.html">Questions</a></li>
+                            <li><a class="dropdown-item" href="answer-template.html">Answer Template</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Data Integration Staging Report</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="user-management.html">User Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="role-management.html">Roles Management</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="profile-management.html">Profile Management</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Config
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="exception-stage.html">Exception Stage</a></li>
+                            <li><a class="dropdown-item" href="fields-library.html">Fields Library</a></li>
+                            <li><a class="dropdown-item" href="ageing-master.html">Ageing Master</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Reports</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <img src="images/powerby.svg" alt="" />
+                    <div class="profile-name">JD</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid no-height">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="col">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Update Profile
+                    </h5>
+                </div>
+
+                <div class="col text-end">
+                    <a href="profile-management.html" class="btn btn-light mr-10px">
+                        Cancel
+                    </a>
+                    <!-- <button type="button" class="btn btn-outline btn-outline-success-custom mr-10px">Save as
+                        draft</button> -->
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </section>
+        <section class="field-library-section py-0 px-0 table-layout flex-fill">
+            <div class="main-content-modal-html">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="col-md-2 sidebar-section">
+                        <ul class="nav flex-column fixed-sidenav">
+                            <li class="nav-item position-relative">
+                                <a class="nav-link sidebar-link active" aria-current="page" href="#basic-details">Basic
+                                    Details</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link sidebar-link" href="#user-details">Users Details</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a class="nav-link sidebar-link" href="#scenario-details">Scenario Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 user-modal-right-section">
+                        <div id="basic-details" class="card p-3 mb-3">
+                            <h3 class="section-heading">Basic Details</h3>
+                            <form class="mt-2">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="inputText4" class="form-label">Role Name</label>
+                                        <input type="text" class="form-control" id="inputText4"
+                                            value="MYTEST_NewSubMutest" placeholder="Enter Role Name" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputText4" class="form-label">Role Description</label>
+                                        <textarea class="form-control h-176 filled-textarea"
+                                            placeholder="Enter Role Description" id="floatingTextarea" value="">Test Description
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="user-details" class="card p-3 mb-3">
+                            <h3 class="section-heading">Users Details</h3>
+                            <div class="col-md-4 mb-3">
+                                <label for="inputText4" class="form-label">User</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select User
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-select p-2 w-100">
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" checked/>
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Bhavin Shah</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Ankur Israni</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Botadmin</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Ginu Jos</label>
+                                            </div>
+                                        </li>
+                                        <li class=" dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Krunal Pawar</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-start align-items-center">
+                                <div class="me-2">
+                                    <div class="selected-user align-items-center">
+                                        <img src="images/move-icon.svg" alt="" class="pointer">
+                                        <span>Botadmin</span>
+                                        <img src="images/close-cross.svg" alt="" class="pointer">
+                                    </div>
+                                </div>
+
+                                <div class="me-2">
+                                    <div class="selected-user align-items-center">
+                                        <img src="images/move-icon.svg" alt="" class="pointer">
+                                        <span>Krunal Pawar</span>
+                                        <img src="images/close-cross.svg" alt="" class="pointer">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="scenario-details" class="card p-3">
+                            <h3 class="section-heading">Scenario Details</h3>
+                            <div class="col-md-4 mb-3">
+                                <label for="inputText4" class="form-label">Scenario</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-select btn-select-full-width dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select Scenario
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-select p-2 w-100">
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">66/Alert/Gen/Date</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Accounts Opened & Closed</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Accounts with pref. Rate</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Alert Id Trigger</label>
+                                            </div>
+                                        </li>
+                                        <li class=" dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Atul Check Nbsp</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap justify-content-start align-items-center">
+                                <div class="me-2">
+                                    <div class="selected-user align-items-center">
+                                        <img src="images/move-icon.svg" alt="" class="pointer">
+                                        <span>66/Alert/Gen/Date</span>
+                                        <img src="images/close-cross.svg" alt="" class="pointer">
+                                    </div>
+                                </div>
+
+                                <div class="me-2">
+                                    <div class="selected-user align-items-center">
+                                        <img src="images/move-icon.svg" alt="" class="pointer">
+                                        <span>Atul Check nbsp</span>
+                                        <img src="images/close-cross.svg" alt="" class="pointer">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- script -->
+    <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
+    <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="plugin/datepicker/datepicker.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script>
+        const template = document.getElementById("template");
+        // tippy('.myTooltip', {
+        //     content: template.innerHTML,
+        //     placement: 'right',
+        //     allowHTML: true,
+        //     theme: 'blue',
+        // });
+        tippy("[data-tippy-content]", {
+            theme: "blue-small",
+        });
+    </script>
+    <script>
+        $('#data-duplicate').picker();
+        $('#auto-drop').picker();
+        $('#correlation-within').picker();
+        $('#correlation-across').picker();
+        $('#pagination').picker();
+        $('#function-name').picker();
+        $('#select-fields').picker();
+        $('#select-datatype').picker();
+        $('#select-operator').picker();
+        $('#group-fields').picker();
+        $('#stage').picker();
+        $('#assign-fields').picker();
+        $('#employee').picker();
+        $('#current').picker();
+        $('#stored').picker();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#open-subgrid").click(function () {
+                $(".grid-sub-row").toggle();
+                $(this).parents(".grid-wrap").toggleClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        $('.hide-link').hide();
+        $('.show-link').on('click', function () {
+            $('.hide-link').fadeToggle();
+        })
+    </script>
+
+    <script>$('#pagination').picker();</script>
+
+</body>
+
+</html>

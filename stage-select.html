@@ -147,9 +147,13 @@
                                 <li><a class="dropdown-item" href="#">Modified Date</a></li>
                             </ul>
                         </div>
+                        <li class="nav-item ms-2 d-flex justify-content-center align-items-center">
+                            <a href="" class="link-text-black hide-link export-link"><img src="images/export.svg"
+                                    alt="" class="me-1">Export</a>
+                        </li>
                     </div>
                 </div>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#create-question">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new-stage">
                     Create New
                 </button>
             </div>
@@ -160,7 +164,7 @@
                     <thead>
                         <tr class="table-row">
                             <th scope="col" class="sticky-column-left">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <input class="form-check-input select_all show-link" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <th scope="col" class="filter-th">SCENARIO NAME</th>
                             <th scope="col" class="filter-th">DISPLAY RESPONSE</th>
@@ -177,28 +181,28 @@
                     <tbody class="bg-white">
                         <tr>
                             <th class="w-1" scope="row" class="sticky-column-left"></th>
-                            <td class="w-13">
+                            <td class="w-205px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-13">
+                            <td class="w-206px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-15">
+                            <td class="w-150px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-15">
+                            <td class="w-150px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-13">
+                            <td class="w-101px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-13">
+                            <td class="w-103px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-13">
+                            <td class="w-120px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
-                            <td class="w-13">
+                            <td class="w-130px">
                                 <input class="form-control h-24px" type="text" placeholder="search here..." />
                             </td>
                             <th class="sticky-column py-1"></th>
@@ -221,23 +225,26 @@
                                     <tbody class="bg-white">
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input show-link" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -245,23 +252,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -269,23 +279,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -313,23 +326,26 @@
                                     <tbody class="bg-white">
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -337,23 +353,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -361,23 +380,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -405,23 +427,26 @@
                                     <tbody class="bg-white">
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -429,23 +454,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -453,23 +481,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -497,23 +528,26 @@
                                     <tbody class="bg-white">
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -521,23 +555,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -545,23 +582,26 @@
                                         </tr>
                                         <tr>
                                             <th class="w-1 sticky-column-left" scope="row">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault" />
                                             </th>
-                                            <td class="w-13">STGRPT00231</td>
-                                            <td class="w-13">Reopen Send To R1</td>
-                                            <td class="w-15 text-pink"><span class="me-1 fs-6">•</span>Partial Close</td>
-                                            <td class="w-15"><span class="me-1 fs-6">•</span>R1</td>
-                                            <td class="w-13">Yes</td>
-                                            <td class="w-13">SMAL512</td>
-                                            <td class="w-13">22 Apr, 2021</td>
-                                            <td class="w-13">22 Apr, 2021</td>
+                                            <td class="w-205px">STGRPT00231</td>
+                                            <td class="w-206px">Reopen Send To R1</td>
+                                            <td class="w-150px text-pink"><span class="me-1 fs-6">•</span>Partial Close
+                                            </td>
+                                            <td class="w-150px"><span class="me-1 fs-6">•</span>R1</td>
+                                            <td class="w-101px">Yes</td>
+                                            <td class="w-103px">SMAL512</td>
+                                            <td class="w-120px">22 Apr, 2021</td>
+                                            <td class="w-130px">22 Apr, 2021</td>
                                             <th class="sticky-column py-1 z-index-2">
                                                 <div class="d-flex justify-content-center">
                                                     <button data-bs-toggle="modal" data-bs-target="#edit-question"
                                                         class="btn btn-sm btn-dot me-2" type="button">
                                                         <img src="images/edit.svg" alt="" />
                                                     </button>
-                                                    <button class="btn btn-sm btn-dot" type="button">
+                                                    <button class="btn btn-sm btn-dot" data-bs-toggle="modal"
+                                                        data-bs-target="#delete-exception" type="button">
                                                         <img src="images/delete.svg" alt="" />
                                                     </button>
                                                 </div>
@@ -580,12 +620,13 @@
                         <div class="col-md-6">
                             <div class="d-flex justify-content-start align-items-center">
                                 <span>Show</span>
-                                <select class="form-select picker-select" id="pagination" name="code" style="display: none">
+                                <select class="form-select picker-select" id="pagination" name="code"
+                                    style="display: none">
                                     <option value="1" selected="selected">10</option>
-                                            <option value="2">20</option>
-                                            <option value="3">30</option>
-                                            <option value="4">50</option>
-                                            <option value="5">100</option>
+                                    <option value="2">20</option>
+                                    <option value="3">30</option>
+                                    <option value="4">50</option>
+                                    <option value="5">100</option>
                                 </select>
                                 <span>Entries</span>
                             </div>
@@ -622,313 +663,217 @@
                 </div>
             </div>
         </section>
-
-        <!-- Create Question Modal -->
-        <div class="modal fade" id="create-question" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header row justify-content-between">
-                        <div class="col">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                                Create New Questions
-                            </h5>
-                        </div>
-                        <div class="col text-end">
-                            <button type="button" class="btn btn-light mr-10px" data-bs-dismiss="modal" aria-label="Close">
-                                Cancel
-                            </button>
-                            <button type="button" class="btn btn-primary">Save</button>
-                        </div>
-                    </div>
-                    <div class="modal-body main-tab-content py-0">
-                        <div class="d-flex flex-wrap justify-content-between">
-                            <div class="col-md-2 sidebar-section">
-                                <ul class="nav flex-column fixed-sidenav">
-                                    <li class="nav-item position-relative">
-                                        <a class="nav-link sidebar-link active" aria-current="page" href="#">Question
-                                            Library</a>
-                                    </li>
-                                    <li class="nav-item position-relative">
-                                        <a class="nav-link sidebar-link" href="#">Nested Questions</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-10 user-modal-right-section">
-                                <div class="card p-3 mb-3">
-                                    <h3 class="section-heading">Question Library Details</h3>
-                                    <div class="col-md-7 mt-3">
-                                        <label for="inputText4" class="form-label">Question Set <sup>*</sup></label>
-                                        <div class="dropdown">
-                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
-                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Select
-                                            </button>
-                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_activation_date</label>
-                                                    </div>
-                                                </li>
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_expiry_date</label>
-                                                    </div>
-                                                </li>
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_name</label>
-                                                    </div>
-                                                </li>
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_no</label>
-                                                    </div>
-                                                </li>
-                                                <li class=" dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_number</label>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 mt-3">
-                                        <a class="link-text-success d-flex align-items-center" role="button"
-                                            data-bs-toggle="modal" data-bs-target="#add-question"><img
-                                                src="images/plus.svg" alt="" class="me-2">New Question Set</a>
-                                    </div>
-                                    <div class="col-md-7 mt-3">
-                                        <label for="inputText4" class="form-label">Question Number <sup>*</sup></label>
-                                        <input type="text" class="form-control" id="inputText4"
-                                            placeholder="Enter Question Number" />
-                                    </div>
-                                    <hr class="my-3 my-hr">
-                                    <div class="col-md-7">
-                                        <label for="inputText4" class="form-label">Question <sup>*</sup></label>
-                                        <input type="text" class="form-control" id="inputText4"
-                                            placeholder="Enter Question" />
-                                    </div>
-                                    <div class="col-md-7 mt-3">
-                                        <label for="inputText4" class="form-label">Answer Type <sup>*</sup></label>
-                                        <div class="dropdown">
-                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
-                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Select
-                                            </button>
-                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_activation_date</label>
-                                                    </div>
-                                                </li>
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_expiry_date</label>
-                                                    </div>
-                                                </li>
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_name</label>
-                                                    </div>
-                                                </li>
-                                                <li class="mb-2 pb-2 dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_no</label>
-                                                    </div>
-                                                </li>
-                                                <li class=" dropdown-item-select">
-                                                    <div class="form-check d-flex align-items-center">
-                                                        <input class="form-check-input me-2" type="checkbox"
-                                                            id="inlineCheckbox1" value="option1" />
-                                                        <label class="form-check-label select-dropdown-label"
-                                                            for="inlineCheckbox1">Account_number</label>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 mt-3">
-                                        <a class="link-text-success d-flex align-items-center" role="button"
-                                            data-bs-toggle="modal" data-bs-target="#answer-type"><img
-                                                src="images/plus.svg" alt="" class="me-2">New Answer Type</a>
-                                    </div>
-                                </div>
-
-                                <div class="card p-3 mb-3">
-                                    <h3 class="section-heading">Nested Questions</h3>
-                                    <div class="col-md-7 mt-3">
-                                        <label for="inputText4" class="form-label">Depends On</label>
-                                        <div class="dropdown">
-                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
-                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Select
-                                            </button>
-                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_activation_date</label>
-                                                </div>
-                                            </li>
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_expiry_date</label>
-                                                </div>
-                                            </li>
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_name</label>
-                                                </div>
-                                            </li>
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_no</label>
-                                                </div>
-                                            </li>
-                                            <li class=" dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_number</label>
-                                                </div>
-                                            </li>
-                                        </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7 mt-3">
-                                        <label for="inputText4" class="form-label">Answer Of Questions</label>
-                                        <div class="dropdown">
-                                            <button class="btn btn-select btn-select-full-width dropdown-toggle"
-                                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Select
-                                            </button>
-                                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_activation_date</label>
-                                                </div>
-                                            </li>
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_expiry_date</label>
-                                                </div>
-                                            </li>
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_name</label>
-                                                </div>
-                                            </li>
-                                            <li class="mb-2 pb-2 dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_no</label>
-                                                </div>
-                                            </li>
-                                            <li class=" dropdown-item-select">
-                                                <div class="form-check d-flex align-items-center">
-                                                    <input class="form-check-input me-2" type="checkbox"
-                                                        id="inlineCheckbox1" value="option1" />
-                                                    <label class="form-check-label select-dropdown-label"
-                                                        for="inlineCheckbox1">Account_number</label>
-                                                </div>
-                                            </li>
-                                        </ul> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
     </main>
 
-    <!-- Add Question Popup Modal -->
-    <div class="modal fade" id="add-question" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- Add New Stage Popup Modal -->
+    <div class="modal fade" id="new-stage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content delete-user-modal">
                 <div class="modal-body p-4">
-                    <div class="text-start mb-3">
-                        <h3 class="mb-3 delete-modal-heading">
-                            Question Set Details
-                        </h3>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Question Set Code</label>
-                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Question Set Code" />
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Question Set Name</label>
-                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Question Set Name" />
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Description</label>
-                        <textarea class="form-control filled-textarea" placeholder="Enter Description"
-                            id="floatingTextarea"></textarea>
-                    </div>
-                    <div class="mt-3">
-                        <p class="form-label mb-2">Status</p>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Enable</label>
+                    <h3 class="section-heading">Response Details</h3>
+                    <div class="col-md-4 mt-3">
+                        <label for="inputText4" class="form-label">Scenario Name <sup>*</sup></label>
+                        <div class="dropdown">
+                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Select
+                            </button>
+                            <ul class="dropdown-menu w-100 p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <a class="dropdown-item" href="#">5676576</a>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <a class="dropdown-item" href="#">66/Alert/Gen/Date<span
+                                            class="ms-2">5676576</span></a>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <a class="dropdown-item" href="#">Accounts opened & closed</a>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <a class="dropdown-item" href="#">Alert Id Trigger</a>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <a class="dropdown-item" href="#">Atul New Test Module</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Disable</label>
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <label for="inputText4" class="form-label">Traverse Dropdown <sup>*</sup></label>
+                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Traverse Name" />
+                    </div>
+                    <div class="row gx-3 mt-3">
+                        <div class="col-md-4">
+                            <label for="inputText4" class="form-label">Comment <sup>*</sup></label>
+                            <div class="dropdown">
+                                <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select
+                                </button>
+                                <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputText4" class="form-label">Source Exception Stage <sup>*</sup></label>
+                            <div class="dropdown">
+                                <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select
+                                </button>
+                                <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputText4" class="form-label">Destination Exception Stage <sup>*</sup></label>
+                            <div class="dropdown">
+                                <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select
+                                </button>
+                                <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_activation_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_expiry_date</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_name</label>
+                                    </div>
+                                </li>
+                                <li class="mb-2 pb-2 dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_no</label>
+                                    </div>
+                                </li>
+                                <li class=" dropdown-item-select">
+                                    <div class="form-check d-flex align-items-center">
+                                        <input class="form-check-input me-2" type="checkbox"
+                                            id="inlineCheckbox1" value="option1" />
+                                        <label class="form-check-label select-dropdown-label"
+                                            for="inlineCheckbox1">Account_number</label>
+                                    </div>
+                                </li>
+                            </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pe-2 mt-3">
+                        <div class="form-check custom-checkbox">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Question Mandatory</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pe-2 mt-3">
+                        <div class="form-check custom-checkbox">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Due Date Required </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pe-2 mt-3">
+                        <div class="form-check custom-checkbox">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Is Conditional
+                                Response(threshold)</label>
                         </div>
                     </div>
                 </div>
@@ -944,257 +889,27 @@
         </div>
     </div>
 
-    <!-- Answer Type Popup Modal -->
-    <div class="modal fade" id="answer-type" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Delete Exception Popup Modal -->
+    <div class="modal fade" id="delete-exception" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content delete-user-modal">
-                <div class="modal-body p-4">
-                    <div class="text-start mb-3">
+                <div class="modal-body p-5 d-flex justify-content-center align-items-center">
+                    <div class="text-center">
+                        <img src="images/delete-modal-img.svg" alt="" class="mb-3" />
                         <h3 class="mb-3 delete-modal-heading">
-                            Answer Template Info
+                            Are you sure you want to Delete Exception?
                         </h3>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Answer Template Name <sup>*</sup></label>
-                        <input type="text" class="form-control" id="inputText4" placeholder="Enter Question Set Code" />
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Response Type</label>
-                        <div class="dropdown">
-                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Select
+                        <p class="mb-3 delete-modal-text">
+                            By deleteing profile you will removing all users and roles assigned
+                        </p>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal" aria-label="Close">
+                                Cancel
                             </button>
-                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_activation_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_expiry_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_name</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_no</label>
-                                    </div>
-                                </li>
-                                <li class=" dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_number</label>
-                                    </div>
-                                </li>
-                            </ul> -->
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Data Type <sup>*</sup></label>
-                        <div class="dropdown">
-                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Select
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                                Delete
                             </button>
-                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_activation_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_expiry_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_name</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_no</label>
-                                    </div>
-                                </li>
-                                <li class=" dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_number</label>
-                                    </div>
-                                </li>
-                            </ul> -->
                         </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Select Answer Template Master</label>
-                        <div class="dropdown">
-                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Select
-                            </button>
-                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_activation_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_expiry_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_name</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_no</label>
-                                    </div>
-                                </li>
-                                <li class=" dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_number</label>
-                                    </div>
-                                </li>
-                            </ul> -->
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="inputText4" class="form-label">Dropdown Header Fields</label>
-                        <div class="dropdown">
-                            <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Select
-                            </button>
-                            <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_activation_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_expiry_date</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_name</label>
-                                    </div>
-                                </li>
-                                <li class="mb-2 pb-2 dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_no</label>
-                                    </div>
-                                </li>
-                                <li class=" dropdown-item-select">
-                                    <div class="form-check d-flex align-items-center">
-                                        <input class="form-check-input me-2" type="checkbox"
-                                            id="inlineCheckbox1" value="option1" />
-                                        <label class="form-check-label select-dropdown-label"
-                                            for="inlineCheckbox1">Account_number</label>
-                                    </div>
-                                </li>
-                            </ul> -->
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <p class="form-label mb-2">Does Allow Future Date?</p>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">No</label>
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <p class="form-label mb-2">Does Allow Past Date?</p>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">No</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="col text-start button-group">
-                        <button type="button" class="btn btn-primary">Save</button>
-                        <button type="button" class="btn btn-light" data-bs-dismiss="modal" aria-label="Close">
-                            Cancel
-                        </button>
                     </div>
                 </div>
             </div>
@@ -1205,7 +920,8 @@
     <script src="js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="plugin/bootstrap/popper.min.js" type="text/javascript"></script>
     <script src="plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script><script src="plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="plugin/picker/picker.min.js" type="text/javascript"></script>
     <script src="plugin/datepicker/datepicker.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script>
@@ -1228,6 +944,13 @@
             });
         });
     </script>
-<script>$('#pagination').picker();</script></body>
+    <script>$('#pagination').picker();</script>
+    <script>
+        $('.hide-link').hide();
+        $('.show-link').on('click', function () {
+            $('.hide-link').fadeToggle();
+        })
+    </script>
+</body>
 
 </html>

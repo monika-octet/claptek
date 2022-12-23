@@ -112,26 +112,26 @@
                 <h1 class="mb-0">Fields Library</h1>
             </div>
         </section>
-        <section class="field-library-section  px-0 table-layout flex-fill">
+        <section class="field-library-section table-layout flex-fill">
             <div class="card fields-library-card">
-                <div class="mb-3 d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center w-100">
                     <div class="col">
                         <h5 class="modal-title">
                             Fields Library Details
                         </h5>
                     </div>
                     <div class="col text-end">
-                        <a type="button" class="link-text-success" data-bs-toggle="modal" data-bs-target="#add-bulk">+
-                            Add Bulk</a>
+                        <a type="button" class="link-text-success d-flex justify-content-end align-items-center" data-bs-toggle="modal" data-bs-target="#add-bulk"><img src="images/plus-fill.svg" alt="" class="me-2">Add Bulk</a>
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <div class="col-6 mb-4">
+                <div class="field-library-details w-100">
+
+                    <div class="col-5">
                         <label for="inputText4" class="form-label">Field Name</label>
                         <input type="text" class="form-control" id="inputText4" placeholder="Enter Field Name" />
                     </div>
-                    <div class="col-6 mb-4">
+                    <div class="col-5">
                         <label for="inputText4" class="form-label">Data Type</label>
                         <div class="dropdown">
                             <button class="btn btn-select btn-select-full-width dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -181,7 +181,7 @@
                             </ul> -->
                         </div>
                     </div>
-                    <div class="col-12 mb-4">
+                    <div class="col-12">
                         <label for="inputText4" class="form-label">Description</label>
                         <textarea class="form-control filled-textarea" placeholder="Enter Scenario Description"
                             id="floatingTextarea"></textarea>
@@ -193,7 +193,19 @@
                         <button type="button" class="btn btn-primary">Add</button>
                     </div>
                 </div>
-                <div class="mb-2">
+
+                <div class="field-library-table w-100">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class="col">
+                            <h5 class="modal-title">
+                                Added Fields
+                            </h5>
+                        </div>
+                        <div class="col text-end">
+                            <a href="" class="link-text-black hide-link export-link"><img src="images/export.svg" alt=""
+                                class="me-1">Export</a>
+                        </div>
+                    </div>
                     <table class="table table-bordered table-responsive mb-0">
                         <thead>
                             <tr class="table-row">
@@ -380,7 +392,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="pagination-wrap mt-3">
+                <div class="pagination-wrap w-100">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="d-flex justify-content-start align-items-center">
