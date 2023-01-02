@@ -858,7 +858,7 @@ tbody > tr > td {
 
 .sticky-column-left-2 {
   left: 40px !important;
-  position: sticky !important;
+  position: sticky ;
   top: auto !important;
   background-color: #ffffff !important;
   z-index: 13;
@@ -2086,4 +2086,13 @@ td .cut {
   align-items: flex-start;
   padding: 0px;
   gap: 15px;
+}
+
+.h-24px-select .picker, .h-24px-select .picker .pc-select, .h-24px-select .pc-element.pc-trigger{
+  height: 24px!important;
+}
+
+.h-24px-select .pc-element.pc-trigger{
+  display: flex;
+  align-items: center;
 }

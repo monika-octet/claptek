@@ -196,30 +196,18 @@
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                             </th>
                             <td class="w-175px sticky-column-left-2">
-                                <div class="dropdown">
-                                    <!-- <select name="basic" id="response-select" class="picker-select btn btn-select h-24px btn-select-full-width">
+                                <div class="dropdown h-24px-select">
+                                    <select name="basic" id="response-select" class="picker-select btn btn-select h-24px btn-select-full-width">
                                         <option value="" disabled hidden>Select</option>
                                         <option value="1">Raise to Branch</option>
                                         <option value="2">Drop Alert</option>
-                                    </select> -->
-                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
-                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-select p-2" style="z-index: 15;">
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <a class="dropdown-item dropdown-item-text" href="#">Raise to Branch</a>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <a class="dropdown-item dropdown-item-text" href="#">Drop Alert</a>
-                                        </li>
-                                    </ul>
+                                    </select>
                                 </div>
                             </td>
-                            <td class="w-200px sticky-column-left-3"data-tippy-content="Test comment for exception of DP less than balance"
-                            data-tippy-placement="right" >
-                                <input class="form-control h-24px"
-                                    disabled readonly
+                            <td class="w-200px sticky-column-left-3"
+                                data-tippy-content="Test comment for exception of DP less than balance"
+                                data-tippy-placement="right">
+                                <input class="form-control h-24px" disabled readonly
                                     placeholder="Test Comment for excepti..." />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
@@ -314,8 +302,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -364,7 +351,7 @@
                                         type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Select
                                     </button>
-                                    
+
                                     <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
                                         <li class="mb-2 pb-2 dropdown-item-select">
                                             <div class="form-check d-flex align-items-center">
@@ -410,103 +397,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
-                            </td>
-                            <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
-                            <td class="w-160px">11251</td>
-                            <td class="w-220px">11 Mar 2022 at 12:53 </td>
-                            <td class="w-150px"></td>
-                            <td class="w-175px">Akola</td>
-                            <td class="w-210px">1011</td>
-                            <td class="w-150px">
-                                <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
-                                </div>
-                            </td>
-                            <td class="w-170px">1017623</td>
-                            <td class="w-160px">6300000126</td>
-                            <td class="w-130px">Ranjit Ramrao Gole</td>
-                            <td class="w-160px">02 June 2021</td>
-                            <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-115px">
-                                <div class="d-flex justify-content-center">
-                                    <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
-                                        type="button">
-                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
-                                            class="width-fit" src="../images/eye.svg" alt="" />
-                                    </a>
-                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
-                                        class="btn btn-sm btn-dot me-1" type="button">
-                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
-                                            class="width-fit" src="../images/correlation.svg" alt="" />
-                                    </button>
-                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
-                                        class="btn btn-sm btn-dot" type="button">
-                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
-                                            class="width-fit" src="../images/allocation.svg" alt="" />
-                                    </button>
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="w-2 sticky-column-left text-center" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-175px sticky-column-left-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
-                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select
-                                    </button>
-                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_name</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_no</label>
-                                            </div>
-                                        </li>
-                                        <li class=" dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_number</label>
-                                            </div>
-                                        </li>
-                                    </ul> -->
-                                </div>
-                            </td>
-                            <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -600,8 +491,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -695,8 +585,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -790,8 +679,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -885,102 +773,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
-                            </td>
-                            <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
-                            <td class="w-160px">11251</td>
-                            <td class="w-220px">11 Mar 2022 at 12:53 </td>
-                            <td class="w-150px"></td>
-                            <td class="w-175px">Akola</td>
-                            <td class="w-210px">1011</td>
-                            <td class="w-150px">
-                                <div class="datepicker-box">
-                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
-                                </div>
-                            </td>
-                            <td class="w-170px">1017623</td>
-                            <td class="w-160px">6300000126</td>
-                            <td class="w-130px">Ranjit Ramrao Gole</td>
-                            <td class="w-160px">02 June 2021</td>
-                            <td class="w-160px">09 April 2021</td>
-                            <th class="sticky-column z-index-2 w-115px">
-                                <div class="d-flex justify-content-center">
-                                    <a href="edit-alert-details-response.html"
-                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
-                                        type="button">
-                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
-                                            class="width-fit" src="../images/eye.svg" alt="" />
-                                    </a>
-                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
-                                        class="btn btn-sm btn-dot me-1" type="button">
-                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
-                                            class="width-fit" src="../images/correlation.svg" alt="" />
-                                    </button>
-                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
-                                        class="btn btn-sm btn-dot" type="button">
-                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
-                                            class="width-fit" src="../images/allocation.svg" alt="" />
-                                    </button>
-                                </div>
-                            </th>
-                        </tr><tr>
-                            <th class="w-2 sticky-column-left text-center" scope="row">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            </th>
-                            <td class="w-175px sticky-column-left-2">
-                                <div class="dropdown">
-                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
-                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select
-                                    </button>
-                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_name</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_no</label>
-                                            </div>
-                                        </li>
-                                        <li class=" dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_number</label>
-                                            </div>
-                                        </li>
-                                    </ul> -->
-                                </div>
-                            </td>
-                            <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1074,8 +867,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1169,8 +961,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1264,8 +1055,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1359,8 +1149,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1454,8 +1243,7 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1549,8 +1337,195 @@
                                 </div>
                             </td>
                             <td class="w-200px sticky-column-left-3">
-                                <input class="form-control h-24px"
-                                    placeholder="Enter Comment Here" />
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
+                            </td>
+                            <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
+                            <td class="w-160px">11251</td>
+                            <td class="w-220px">11 Mar 2022 at 12:53 </td>
+                            <td class="w-150px"></td>
+                            <td class="w-175px">Akola</td>
+                            <td class="w-210px">1011</td>
+                            <td class="w-150px">
+                                <div class="datepicker-box">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
+                                </div>
+                            </td>
+                            <td class="w-170px">1017623</td>
+                            <td class="w-160px">6300000126</td>
+                            <td class="w-130px">Ranjit Ramrao Gole</td>
+                            <td class="w-160px">02 June 2021</td>
+                            <td class="w-160px">09 April 2021</td>
+                            <th class="sticky-column z-index-2 w-115px">
+                                <div class="d-flex justify-content-center">
+                                    <a href="edit-alert-details-response.html"
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
+                                        type="button">
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
+                                    </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left text-center" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-175px sticky-column-left-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select
+                                    </button>
+                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_name</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_no</label>
+                                            </div>
+                                        </li>
+                                        <li class=" dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_number</label>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </td>
+                            <td class="w-200px sticky-column-left-3">
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
+                            </td>
+                            <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
+                            <td class="w-160px">11251</td>
+                            <td class="w-220px">11 Mar 2022 at 12:53 </td>
+                            <td class="w-150px"></td>
+                            <td class="w-175px">Akola</td>
+                            <td class="w-210px">1011</td>
+                            <td class="w-150px">
+                                <div class="datepicker-box">
+                                    <input data-toggle="datepicker" class="form-control" placeholder="Select Date">
+                                </div>
+                            </td>
+                            <td class="w-170px">1017623</td>
+                            <td class="w-160px">6300000126</td>
+                            <td class="w-130px">Ranjit Ramrao Gole</td>
+                            <td class="w-160px">02 June 2021</td>
+                            <td class="w-160px">09 April 2021</td>
+                            <th class="sticky-column z-index-2 w-115px">
+                                <div class="d-flex justify-content-center">
+                                    <a href="edit-alert-details-response.html"
+                                        class="btn btn-sm btn-dot me-1 d-flex justify-content-center align-items-center"
+                                        type="button">
+                                        <img data-tippy-content="View Response" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/eye.svg" alt="" />
+                                    </a>
+                                    <button data-bs-toggle="modal" data-bs-target="#correlation"
+                                        class="btn btn-sm btn-dot me-1" type="button">
+                                        <img data-tippy-content="View Correlation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/correlation.svg" alt="" />
+                                    </button>
+                                    <button data-bs-toggle="modal" data-bs-target="#user-allocation"
+                                        class="btn btn-sm btn-dot" type="button">
+                                        <img data-tippy-content="View Allocation" data-tippy-placement="bottom"
+                                            class="width-fit" src="../images/allocation.svg" alt="" />
+                                    </button>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="w-2 sticky-column-left text-center" scope="row">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            </th>
+                            <td class="w-175px sticky-column-left-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-select h-24px btn-select-full-width dropdown-toggle"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Select
+                                    </button>
+                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_activation_date</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_expiry_date</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_name</label>
+                                            </div>
+                                        </li>
+                                        <li class="mb-2 pb-2 dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_no</label>
+                                            </div>
+                                        </li>
+                                        <li class=" dropdown-item-select">
+                                            <div class="form-check d-flex align-items-center">
+                                                <input class="form-check-input me-2" type="checkbox"
+                                                    id="inlineCheckbox1" value="option1" />
+                                                <label class="form-check-label select-dropdown-label"
+                                                    for="inlineCheckbox1">Account_number</label>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </td>
+                            <td class="w-200px sticky-column-left-3">
+                                <input class="form-control h-24px" placeholder="Enter Comment Here" />
                             </td>
                             <td class="w-110px text-center"><span class="tag bg-purple">L1</span></td>
                             <td class="w-160px">11251</td>
@@ -1598,12 +1573,13 @@
                         <div class="col-md-6">
                             <div class="d-flex justify-content-start align-items-center">
                                 <span>Show</span>
-                                <select class="form-select picker-select" id="pagination" name="code" style="display: none">
+                                <select class="form-select picker-select" id="pagination" name="code"
+                                    style="display: none">
                                     <option value="1" selected="selected">10</option>
-                                            <option value="2">20</option>
-                                            <option value="3">30</option>
-                                            <option value="4">50</option>
-                                            <option value="5">100</option>
+                                    <option value="2">20</option>
+                                    <option value="3">30</option>
+                                    <option value="4">50</option>
+                                    <option value="5">100</option>
                                 </select>
                                 <span>Entries</span>
                             </div>
@@ -1653,7 +1629,8 @@
                             </h5>
                         </div>
                         <div class="col text-end">
-                            <button type="button" class="btn btn-light mr-10px" data-bs-dismiss="modal" aria-label="Close">
+                            <button type="button" class="btn btn-light mr-10px" data-bs-dismiss="modal"
+                                aria-label="Close">
                                 Cancel
                             </button>
                             <button type="button" class="btn btn-primary">Save</button>
@@ -1945,8 +1922,8 @@
                                 <p class="no-data-text">No data to display.</p>
                             </div>
                         </div>
-                        <div class="tab-pane fade h-100" id="nav-other"
-                            role="tabpanel" aria-labelledby="nav-other-tab" tabindex="0">
+                        <div class="tab-pane fade h-100" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab"
+                            tabindex="0">
                             <div class="text-center flex-fill">
                                 <img src="../images/no-data.svg" alt="" class="mb-2 no-data-img">
                                 <p class="no-data-text">No data to display.</p>
@@ -2364,7 +2341,8 @@
     <!-- script -->
     <script src="../js/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="../plugin/bootstrap/popper.min.js" type="text/javascript"></script>
-    <script src="../plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script><script src="../plugin/picker/picker.min.js" type="text/javascript"></script>
+    <script src="../plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../plugin/picker/picker.min.js" type="text/javascript"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
         const template = document.getElementById("template");
@@ -2387,7 +2365,21 @@
         });
 
         $('#response-select').picker();
+
+        $('.pc-select').on('click', function () {
+            $('.sticky-column-left-2').css('position', 'static')
+        });
+
+        $(document).mouseup(function (e) {
+            var container = $(".sticky-column-left-2");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.css('position', 'sticky');
+            }
+        });
     </script>
-<script>$('#pagination').picker();</script></body>
+    <script>$('#pagination').picker();</script>
+</body>
 
 </html>
