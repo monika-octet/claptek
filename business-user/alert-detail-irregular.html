@@ -92,7 +92,8 @@
         </section>
         <section class="field-library-section flex-fill d-flex flex-column">
             <div class="tab-content main-tab-content flex-fill pt-0" id="pills-tabContent">
-                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="tab-pane fade h-100 show active" id="pills-home" role="tabpanel"
+                    aria-labelledby="pills-home-tab">
                     <div class="all-donor-grid mt-auto">
                         <table class="table">
                             <tbody>
@@ -172,58 +173,19 @@
                         </table>
                     </div>
                 </div>
-                <div class="tab-pane fade h-100 show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade h-100 show" id="pills-profile" role="tabpanel"
+                    aria-labelledby="pills-profile-tab">
                     <div class="all-donor-grid mt-auto">
                         <div class="card worklog-card mb-4">
-                            <div class="col mb-3">
+                            <div class="col-md-2 mb-3">
                                 <label class="form-label">Select Response</label>
-                                <div class="dropdown">
-                                    <button class="btn btn-select dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Select
-                                    </button>
-                                    <!-- <ul class="dropdown-menu dropdown-menu-select p-2">
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_activation_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_expiry_date</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_name</label>
-                                            </div>
-                                        </li>
-                                        <li class="mb-2 pb-2 dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_no</label>
-                                            </div>
-                                        </li>
-                                        <li class=" dropdown-item-select">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input me-2" type="checkbox"
-                                                    id="inlineCheckbox1" value="option1" />
-                                                <label class="form-check-label select-dropdown-label"
-                                                    for="inlineCheckbox1">Account_number</label>
-                                            </div>
-                                        </li>
-                                    </ul> -->
+                                <div class="dropdown btn-select">
+                                    <select name="basic" id="response-select-alert"
+                                        class="picker-select btn btn-select ">
+                                        <option value="" disabled hidden>Select</option>
+                                        <option value="1">Raise to Branch</option>
+                                        <option value="2">Drop Alert</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -250,7 +212,8 @@
                                 <div class="col-md-8">
                                     <h3 class="worklog-card-heading mb-3">DB Administrator</h3>
                                     <p class="worklog-card-points">Report Uploaded Successfully</p>
-                                    <p class="worklog-card-points mb-0">Exception Status:<span class="point-inner-text ms-2">L1</span></p>
+                                    <p class="worklog-card-points mb-0">Exception Status:<span
+                                            class="point-inner-text ms-2">L1</span></p>
                                 </div>
                                 <div class="col-md-4 text-end">
                                     <span class="tag bg-light-custom me-2">L1</span>
@@ -265,7 +228,8 @@
                                 <div class="col-md-8">
                                     <h3 class="worklog-card-heading mb-3">DB Administrator</h3>
                                     <p class="worklog-card-points">Report Uploaded Successfully</p>
-                                    <p class="worklog-card-points mb-0">Exception Status:<span class="point-inner-text ms-2">L1</span></p>
+                                    <p class="worklog-card-points mb-0">Exception Status:<span
+                                            class="point-inner-text ms-2">L1</span></p>
                                 </div>
                                 <div class="col-md-4 text-end">
                                     <span class="tag bg-light-custom me-2">New</span>
@@ -279,12 +243,14 @@
                             <div class="d-flex justify-content-between align-items-top">
                                 <div class="col-md-8">
                                     <h3 class="worklog-card-heading mb-3">DB Administrator</h3>
-                                    <p class="worklog-card-points">Exception Status:<span class="point-inner-text ms-2">Under
+                                    <p class="worklog-card-points">Exception Status:<span
+                                            class="point-inner-text ms-2">Under
                                             Review ( Audit Supervisor)</span></p>
                                     <p class="worklog-card-points">Exception Stage:<span
                                             class="point-inner-text ms-2">Partial_Closure Moved To Under Review (Audit
                                             Supervisor)</span></p>
-                                    <p class="worklog-card-points">User Response:<span class="point-inner-text ms-2">Send To
+                                    <p class="worklog-card-points">User Response:<span
+                                            class="point-inner-text ms-2">Send To
                                             Under Review (Audit Supervisor)</span></p>
                                     <p class="worklog-card-points mb-0">User Comment:<span
                                             class="point-inner-text ms-2">1009</span></p>
@@ -326,7 +292,9 @@
                                             type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Select
                                         </button>
-                                        <ul class="dropdown-menu z-index-3 w-100" aria-labelledby="navbarDropdown" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(-120.8px, 32px, 0px);">
+                                        <ul class="dropdown-menu z-index-3 w-100" aria-labelledby="navbarDropdown"
+                                            data-popper-placement="bottom-start"
+                                            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(-120.8px, 32px, 0px);">
                                             <li><a class="dropdown-item" href="#">Yes</a></li>
                                             <li><a class="dropdown-item" href="#">No</a></li>
                                             <li><a class="dropdown-item" href="#">Customer Not Contactable</a></li>
@@ -340,8 +308,8 @@
                                 <div>
                                     <label for="inputText4" class="form-label">CPV Approved By?</label>
                                     <div class="col-md-7">
-                                        <textarea class="form-control filled-textarea" placeholder="Enter Your Answer Here"
-                                                    id="floatingTextarea"></textarea>
+                                        <textarea class="form-control filled-textarea"
+                                            placeholder="Enter Your Answer Here" id="floatingTextarea"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -350,15 +318,16 @@
                                 <div>
                                     <label for="inputText4" class="form-label">Reason For Negative CPV?</label>
                                     <div class="col-md-7">
-                                        <textarea class="form-control filled-textarea" placeholder="Enter Your Answer Here"
-                                                    id="floatingTextarea"></textarea>
+                                        <textarea class="form-control filled-textarea"
+                                            placeholder="Enter Your Answer Here" id="floatingTextarea"></textarea>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="card p-3 mb-3">
                                 <div>
-                                    <label for="inputText4" class="form-label">Are Customers Transaction in line with customer profile updated in flexcube?</label>
+                                    <label for="inputText4" class="form-label">Are Customers Transaction in line with
+                                        customer profile updated in flexcube?</label>
                                     <div class="dropdown col-md-7">
                                         <button class="btn btn-select btn-select-full-width dropdown-toggle"
                                             type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -530,6 +499,9 @@
         <script src="../plugin/bootstrap/popper.min.js" type="text/javascript"></script>
         <script src="../plugin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
         <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="../plugin/picker/picker.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+        <script src="../js/custom.js" type="text/javascript"></script>
         <script>
             const template = document.getElementById("template");
             // tippy('.myTooltip', {
@@ -549,7 +521,13 @@
                     $(this).parents(".grid-wrap").toggleClass("active");
                 });
             });
+
+
         </script>
-<script>$('#pagination').picker();</script></body>
+        <script>
+            $('#response-select-alert').picker();
+            $('#pagination').picker();
+        </script>
+</body>
 
 </html>
