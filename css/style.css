@@ -2040,6 +2040,13 @@ td .cut {
   white-space: nowrap;
 }
 
+td.w-320px .cut {
+  width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .w-206px {
   width: 206px;
 }
